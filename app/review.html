@@ -1,0 +1,52 @@
+<!--#set var="title" value="Дай знать | Отзыв" -->
+<!--#include virtual="/parts/header__client.html" -->
+
+	<main class="client">
+		<div class="container">
+
+			<section class="name">
+				<div class="logo">ДАЙ ЗНАТЬ!</div>
+				<h1 class="client-name">Hard Rock</h1>
+				<div class="location">amsterdam, red lights</div>
+			</section>
+
+			<section class="quote">
+				<img src="images/dist/photo.jpg" alt="" class="photo">
+				<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nec, vel hendrerit ipsum tortor, eget tristique. Ac sed augue vitae fames mauris nam ante odio ridiculus. Cursus mi</blockquote>
+				<cite>Lorem ipsum dolor</cite>
+			</section>
+
+			<section class="review">
+				<h2 class="title">Составь текстовый отзыв</h2>
+				<form action="" method="POST" enctype="multipart/form-data">
+					<span>Отзыв</span>
+					<label class="btn-input-images" for="imgupld"></label>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+
+					<div class="input-images"></div>
+
+					<h2 class="title">И поставь оценку</h2>
+
+					<div class="rate">
+						<label>
+							<input type="radio" name="rate" id="bad" value="bad">
+							<img src="../images/dist/icons/bad.png" alt="bad">
+						</label>
+						<label>
+							<input type="radio" name="rate" id="ok" value="ok">
+							<img src="../images/dist/icons/ok.png" alt="ok">
+						</label>
+						<label>
+							<input type="radio" name="rate" id="super" value="super">
+							<img src="../images/dist/icons/super.png" alt="super">
+						</label>
+					</div>
+
+					<button type="submit">Отправить</button>
+				</form>
+			</section>
+		</div>
+	</main>
+	<!-- /.client -->
+
+<!--#include virtual="/parts/footer.html" -->

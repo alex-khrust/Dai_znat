@@ -1,0 +1,28 @@
+// GENERAL PROJECT STYLES
+
+body
+	background: url(../images/dist/white-paper-texture-background.jpg) repeat center
+
+.container
+	width: 100%
+	height: auto
+	padding: 0 15px
+	margin: 0 auto
+
+h2, h3, h4
+	position: relative
+	z-index: 1
+	padding-left: 17px
+	margin: 0
+	&::before
+		content: ''
+		position: absolute
+		bottom: 10px
+		left: 0
+		width: 36px
+		height: 36px
+		background: $green
+		z-index: -1
+
+h2
+	font-size: 27px
