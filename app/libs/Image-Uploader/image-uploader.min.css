@@ -64,7 +64,7 @@
   grid-auto-flow: row;
   justify-content: start;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto-fill, 77px);
+  grid-template-rows: repeat(auto-fill, clamp(50px, 16vw, 77px));
   gap: 22px;
   line-height: 0;
   transition: .3s
@@ -72,8 +72,8 @@
 
 .image-uploader .uploaded .uploaded-image {
   display: inline-block;
-  width: 77px;
-  height: 77px;
+  width: clamp(50px, 16vw, 77px);
+  height: clamp(50px, 16vw, 77px);
   /* padding-bottom: 77px; */
   /* width: calc(16.6666667% - 1rem);
   padding-bottom: calc(16.6666667% - 1rem); */
