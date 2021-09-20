@@ -6,7 +6,7 @@
   left: 0
   background: url(../images/dist/white-paper-texture-background.jpg)
   height: 75px
-  transition: .3s
+  transition: .2s
   z-index: 999
   &.open
     height: 252px
@@ -51,13 +51,15 @@
     align-items: center
     justify-content: center
     gap: 15px
-    transition: .3s
+    transition: .1s
     z-index: -100
     opacity: 0
+    visibility: hidden
   &.open
     .menu
       opacity: 1
       z-index: 0
+      visibility: visible
 
   .header__enter
     width: 190px
