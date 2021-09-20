@@ -26,3 +26,25 @@ h2, h3, h4
 
 h2
 	font-size: 27px
+
+.logo
+	width: auto
+	padding-left: 17px
+	display: flex
+	font-size: 21px
+	font-weight: bold
+	line-height: 25px
+	text-align: center
+	text-transform: lowercase
+	position: relative
+	text-decoration: none
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		width: 23px
+		height: 23px
+		top: -3px
+		left: 0
+		background: $green
+		z-index: -1

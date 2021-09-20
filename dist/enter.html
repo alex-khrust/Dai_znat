@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<base href="https://alex-khrust.github.io/Dai_znat/app/">
 
-	<title>Дай знать</title>
+	<title>Дай знать | Авторизация</title>
 	<meta name="description" content="Дай знать">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -21,29 +21,55 @@
 
 <body>
 
-	<header>
-		
+	<header class="header__authorization">
+		<div class="container">
+
+			<div class="header__top">
+				<a href="" class="logo">ДАЙ ЗНАТЬ!</a>
+				<button class="navBurger" role="navigation" id="navToggle"></button>
+			</div>
+
+			<div class="menu">
+				<div class="header__enter">
+					<a href="" class="header__enter__link">Вхід</a>
+					/
+					<a href="" class="header__enter__link">Реєстрація</a>
+				</div>
+				<button class="btn-call">Заказать звонок</button>
+
+				<div class='local' id="local">
+					<details class='details'>
+						<summary class="summary">RU</summary>
+						<div class='opt-wrapper'>
+							<button type="button" data-lang='russian' class='opt selected' value="RU">RU</button>
+							<button type="button" data-lang='deutsch' class='opt' value="UA">UA</button>
+						</div>
+					</details>
+				</div>
+
+			</div>
+
+		</div>
 	</header>
 
 <main>
-	<section class="">
+	<section class="enter">
 		<div class="container">
 
-			<ol>
-				<li>
-					<a href="review.html">Отзыв</a>
-				</li>
-				<li>
-					<a href="enter.html">Вход</a>
-				</li>
-				<li>
-					<a href="authorization.html">Авторизация</a>
-				</li>
-			</ol>
+			<div class="enter__box">
+				<div class="logo">ДАЙ ЗНАТЬ!</div>
+
+				<h1 class="title">Приветствуем на нашем сервисе! Чтоб начать надо определиться хто ты!</h1>
+
+				<div class="enter__box__links">
+					<a href="" class="guest">Гость, хочу оставить отзыв</a>
+					<a href="" class="businessman">Собственник бизнеса</a>
+				</div>
+			</div>
 
 		</div>
 	</section>
-	<!-- /. -->
+	<!-- /.enter -->
 </main>
 
 	<footer>
