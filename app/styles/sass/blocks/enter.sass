@@ -18,6 +18,14 @@
     border-radius: 4px
     display: grid
     justify-content: center
+    @media (min-width: 768px)
+      width: auto
+      max-width: none
+      padding: 32px 65px 44px
+    @media (min-width: 1600px)
+      padding: 45px 90px 60px
+      margin-top: 140px
+      
 
     .logo
       width: auto
@@ -30,6 +38,20 @@
         height: 32px
         top: 0
         left: 0
+      @media (min-width: 768px)
+        font-size: 38px
+        padding-top: 16px
+        padding-left: 28px
+        &::before
+          width: 42px
+          height: 42px
+      @media (min-width: 1600px)
+        font-size: 53px
+        padding-top: 23px
+        padding-left: 34px
+        &::before
+          width: 57px
+          height: 57px
 
     .title
       font-weight: 600
@@ -37,7 +59,15 @@
       line-height: 16px
       text-align: center
       color: #000000
-      margin: 20px 0 30px
+      margin: 30px auto 40px
+      @media (min-width: 768px)
+        max-width: 270px
+        font-size: 16px
+        line-height: 19px
+      @media (min-width: 1600px)
+        max-width: 383px
+        font-size: 21px
+        line-height: 26px
 
     .enter__box__links
       display: grid
@@ -110,6 +140,9 @@
           position: absolute
           top: 50%
           transform: translateY(-50%)
+        @media (min-width: 1600px)
+          width: 282px
+          height: 60px
 
       .google
         padding-left: 33px
@@ -125,7 +158,14 @@
           left: 10px
           width: 27px
           height: 26px
-          background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.7859 13.2834C22.7859 12.6144 22.7241 11.9711 22.6092 11.3535H13.4517V15.0031H18.6845C18.4591 16.1825 17.7741 17.1817 16.7443 17.8507V20.218H19.8867C21.7252 18.5755 22.7859 16.1567 22.7859 13.2834Z' fill='%234285F4'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.4519 22.5045C16.0771 22.5045 18.2781 21.6597 19.8869 20.2187L16.7445 17.8514C15.8738 18.4175 14.7601 18.752 13.4519 18.752C10.9195 18.752 8.77594 17.0924 8.01134 14.8623H4.76292V17.3068C6.36283 20.3903 9.65102 22.5045 13.4519 22.5045Z' fill='%2334A853'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.01109 14.8618C7.81663 14.2957 7.70614 13.691 7.70614 13.0691C7.70614 12.4473 7.81663 11.8426 8.01109 11.2765V8.83203H4.76268C4.10415 10.1057 3.72849 11.5467 3.72849 13.0691C3.72849 14.5916 4.10415 16.0326 4.76268 17.3063L8.01109 14.8618Z' fill='%23FBBC05'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.4519 7.38727C14.8794 7.38727 16.1611 7.8633 17.1688 8.79821L19.9576 6.09212C18.2737 4.56968 16.0727 3.63477 13.4519 3.63477C9.65102 3.63477 6.36283 5.74903 4.76292 8.83252L8.01134 11.277C8.77594 9.04695 10.9195 7.38727 13.4519 7.38727Z' fill='%23EA4335'/%3E%3C/svg%3E%0A") no-repeat
+          background: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.7859 13.2834C22.7859 12.6144 22.7241 11.9711 22.6092 11.3535H13.4517V15.0031H18.6845C18.4591 16.1825 17.7741 17.1817 16.7443 17.8507V20.218H19.8867C21.7252 18.5755 22.7859 16.1567 22.7859 13.2834Z' fill='%234285F4'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.4519 22.5045C16.0771 22.5045 18.2781 21.6597 19.8869 20.2187L16.7445 17.8514C15.8738 18.4175 14.7601 18.752 13.4519 18.752C10.9195 18.752 8.77594 17.0924 8.01134 14.8623H4.76292V17.3068C6.36283 20.3903 9.65102 22.5045 13.4519 22.5045Z' fill='%2334A853'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.01109 14.8618C7.81663 14.2957 7.70614 13.691 7.70614 13.0691C7.70614 12.4473 7.81663 11.8426 8.01109 11.2765V8.83203H4.76268C4.10415 10.1057 3.72849 11.5467 3.72849 13.0691C3.72849 14.5916 4.10415 16.0326 4.76268 17.3063L8.01109 14.8618Z' fill='%23FBBC05'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.4519 7.38727C14.8794 7.38727 16.1611 7.8633 17.1688 8.79821L19.9576 6.09212C18.2737 4.56968 16.0727 3.63477 13.4519 3.63477C9.65102 3.63477 6.36283 5.74903 4.76292 8.83252L8.01134 11.277C8.77594 9.04695 10.9195 7.38727 13.4519 7.38727Z' fill='%23EA4335'/%3E%3C/svg%3E%0A") no-repeat center
+        @media (min-width: 1600px)
+          font-size: 20px
+          &::before
+            left: 18px
+            width: 29px
+            height: 29px
+            background-size: 29px
 
       .apple
         padding-left: 33px
@@ -142,7 +182,14 @@
           left: 10px
           width: 28px
           height: 27px
-          background: url("data:image/svg+xml,%3Csvg width='28' height='27' viewBox='0 0 28 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3036 8.07385C15.1629 8.07385 16.24 7.49293 16.8815 6.71838C17.4624 6.01644 17.886 5.03614 17.886 4.05584C17.886 3.92271 17.8739 3.78959 17.8497 3.68066C16.8936 3.71697 15.7438 4.32209 15.054 5.13296C14.5094 5.75018 14.0132 6.71838 14.0132 7.71078C14.0132 7.85601 14.0374 8.00124 14.0495 8.04965C14.11 8.06175 14.2068 8.07385 14.3036 8.07385ZM11.278 22.7178C12.452 22.7178 12.9724 21.9312 14.4368 21.9312C15.9254 21.9312 16.2521 22.6936 17.5592 22.6936C18.8421 22.6936 19.7013 21.5076 20.5122 20.3457C21.4199 19.0145 21.795 17.7074 21.8193 17.6469C21.7345 17.6227 19.2777 16.6182 19.2777 13.7983C19.2777 11.3536 21.2141 10.2523 21.3231 10.1676C20.0402 8.328 18.0917 8.27959 17.5592 8.27959C16.119 8.27959 14.9451 9.15097 14.2068 9.15097C13.4081 9.15097 12.3551 8.328 11.1086 8.328C8.73651 8.328 6.32812 10.2886 6.32812 13.9919C6.32812 16.2914 7.22371 18.724 8.32503 20.2973C9.26902 21.6286 10.092 22.7178 11.278 22.7178Z' fill='black'/%3E%3C/svg%3E%0A") no-repeat
+          background: url("data:image/svg+xml,%3Csvg width='28' height='27' viewBox='0 0 28 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3036 8.07385C15.1629 8.07385 16.24 7.49293 16.8815 6.71838C17.4624 6.01644 17.886 5.03614 17.886 4.05584C17.886 3.92271 17.8739 3.78959 17.8497 3.68066C16.8936 3.71697 15.7438 4.32209 15.054 5.13296C14.5094 5.75018 14.0132 6.71838 14.0132 7.71078C14.0132 7.85601 14.0374 8.00124 14.0495 8.04965C14.11 8.06175 14.2068 8.07385 14.3036 8.07385ZM11.278 22.7178C12.452 22.7178 12.9724 21.9312 14.4368 21.9312C15.9254 21.9312 16.2521 22.6936 17.5592 22.6936C18.8421 22.6936 19.7013 21.5076 20.5122 20.3457C21.4199 19.0145 21.795 17.7074 21.8193 17.6469C21.7345 17.6227 19.2777 16.6182 19.2777 13.7983C19.2777 11.3536 21.2141 10.2523 21.3231 10.1676C20.0402 8.328 18.0917 8.27959 17.5592 8.27959C16.119 8.27959 14.9451 9.15097 14.2068 9.15097C13.4081 9.15097 12.3551 8.328 11.1086 8.328C8.73651 8.328 6.32812 10.2886 6.32812 13.9919C6.32812 16.2914 7.22371 18.724 8.32503 20.2973C9.26902 21.6286 10.092 22.7178 11.278 22.7178Z' fill='black'/%3E%3C/svg%3E%0A") no-repeat center
+        @media (min-width: 1600px)
+          font-size: 24px
+          &::before
+            left: 12px
+            width: 36px
+            height: 36px
+            background-size: 36px
 
       .facebook
         padding-left: 29px
@@ -158,7 +205,14 @@
           left: 8px
           width: 23px
           height: 23px
-          background: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.0698 11.6555C22.0698 5.67839 17.2528 0.833008 11.3108 0.833008C5.36871 0.833008 0.551712 5.67839 0.551712 11.6555C0.551712 17.0573 4.48615 21.5346 9.62967 22.3465V14.7839H6.89788V11.6555H9.62967V9.27116C9.62967 6.55877 11.2359 5.06054 13.6935 5.06054C14.8707 5.06054 16.1019 5.27191 16.1019 5.27191V7.93526H14.7452C13.4087 7.93526 12.9919 8.7695 12.9919 9.62536V11.6555H15.9758L15.4988 14.7839H12.9919V22.3465C18.1354 21.5346 22.0698 17.0573 22.0698 11.6555Z' fill='%23FFFFFE'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='21.5181' height='21.5181' fill='white' transform='translate(0.551712 0.833008)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat
+          background: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.0698 11.6555C22.0698 5.67839 17.2528 0.833008 11.3108 0.833008C5.36871 0.833008 0.551712 5.67839 0.551712 11.6555C0.551712 17.0573 4.48615 21.5346 9.62967 22.3465V14.7839H6.89788V11.6555H9.62967V9.27116C9.62967 6.55877 11.2359 5.06054 13.6935 5.06054C14.8707 5.06054 16.1019 5.27191 16.1019 5.27191V7.93526H14.7452C13.4087 7.93526 12.9919 8.7695 12.9919 9.62536V11.6555H15.9758L15.4988 14.7839H12.9919V22.3465C18.1354 21.5346 22.0698 17.0573 22.0698 11.6555Z' fill='%23FFFFFE'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='21.5181' height='21.5181' fill='white' transform='translate(0.551712 0.833008)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat center
+        @media (min-width: 1600px)
+          font-size: 20px
+          &::before
+            left: 8px
+            width: 29px
+            height: 29px
+            background-size: 29px
 
       .viber
         padding-left: 52px
