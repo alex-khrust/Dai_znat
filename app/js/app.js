@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $(".header__authorization, .menu").toggleClass("open");
     $("body").toggleClass("locked");
   });
-  $(".top-nav").click(function () {
-    $(this).removeClass("active");
+  $("main, footer").click(function () {
     $("#navToggle").removeClass("active");
     $(".header__authorization, .menu").removeClass("open");
     $("body").removeClass("locked");
