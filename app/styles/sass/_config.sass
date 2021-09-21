@@ -22,22 +22,22 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap')
+// @mixin font($fname, $fstyle, $fweight, $furl)
+// 	@font-face
+// 		font-family: $fname
+// 		font-style: $fstyle
+// 		font-weight: $fweight
+// 		src: url($furl) format('woff2')
 
-@mixin font($fname, $fstyle, $fweight, $furl)
-	@font-face
-		font-family: $fname
-		font-style: $fstyle
-		font-weight: $fweight
-		src: url($furl) format('woff2')
-
-@include font('Raleway', normal, 400, '../fonts/Raleway-Regular.woff2')
-@include font('Raleway', italic, 400, '../fonts/Raleway-Italic.woff2')
-@include font('Raleway', normal, 500, '../fonts/Raleway-Medium.woff2')
-@include font('Raleway-MediumItalic', italic, 500, '../fonts/Raleway-MediumItalic.woff2')
-@include font('Raleway', normal, 600, '../fonts/Raleway-Bold.woff2')
-@include font('Raleway-SemiBold', normal, 800, '../fonts/Raleway-SemiBold.woff2')
-@include font('Raleway-SemiBoldItalic', italic, 800, '../fonts/Raleway-SemiBoldItalic.woff2')
-@include font('Raleway-ExtraBoldItalic', italic, 900, '../fonts/Raleway-ExtraBoldItalic.woff2')
+// @include font('Raleway', normal, 400, '../fonts/Raleway-Regular.woff2')
+// @include font('Raleway', italic, 400, '../fonts/Raleway-Italic.woff2')
+// @include font('Raleway', normal, 500, '../fonts/Raleway-Medium.woff2')
+// @include font('Raleway-MediumItalic', italic, 500, '../fonts/Raleway-MediumItalic.woff2')
+// @include font('Raleway', normal, 600, '../fonts/Raleway-Bold.woff2')
+// @include font('Raleway-SemiBold', normal, 800, '../fonts/Raleway-SemiBold.woff2')
+// @include font('Raleway-SemiBoldItalic', italic, 800, '../fonts/Raleway-SemiBoldItalic.woff2')
+// @include font('Raleway-ExtraBoldItalic', italic, 900, '../fonts/Raleway-ExtraBoldItalic.woff2')
 
 // GENERAL DOCUMENT STYLES
 
@@ -75,3 +75,7 @@ footer
 
 *
 	box-sizing: border-box
+
+a, 
+button
+	-webkit-tap-highlight-color: transparent
