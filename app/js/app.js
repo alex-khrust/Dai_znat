@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     $(".header__authorization, .menu").removeClass("open");
     $("body").removeClass("locked");
   });
+  $(".header__enter").click(function () {
+    $(this).toggleClass("open");
+  });
   //---------------------------------------------------------------------------
 
   //---------------------------------------------------------------------------
