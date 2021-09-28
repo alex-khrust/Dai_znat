@@ -9,7 +9,7 @@
       padding-left: 205px
   
 .dialog
-  width: 100%
+  width: auto
   height: auto
   max-width: 1010px
   padding: 25px 30px
@@ -17,9 +17,12 @@
   background: #fff
   @media (min-width: 768px)
     padding: 25px 30px
-    margin: 115px 95px 90px
+    margin: 115px 50px 90px
     border: 1px solid $grey
     border-radius: 5px
+  @media (min-width: 1300px)
+    width: 100%
+    margin: 115px 95px 90px
 
   &__inner
     width: 100%
@@ -28,7 +31,10 @@
     border: 1px solid $grey
     border-radius: 5px
     display: flex
+    flex-flow: column
     gap: 20px
+    @media (min-width: 1300px)
+      flex-flow: row
 
   &__header
     display: grid
@@ -61,7 +67,7 @@
   .messages
     width: 100%
     height: auto
-    max-width: 570px
+    // max-width: 570px
     padding: 20px 10px
     background: #fff
     @media (min-width: 768px)
@@ -168,13 +174,14 @@
   
   .feedback
     width: 100%
-    max-width: 320px
     min-height: 408px
     padding: 16px
     border: 4px dashed $green
     border-radius: 9px
     display: grid
     align-content: space-between
+    @media (min-width: 1300px)
+      max-width: 320px
     &.red
       border-color: rgba(234, 67, 53, 1)
       .feedback__info .name
