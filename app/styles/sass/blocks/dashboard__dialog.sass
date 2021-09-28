@@ -1,0 +1,397 @@
+.dashboard__dialog
+  .container
+    // max-width: 1200px
+    display: grid
+    align-items: center
+    justify-content: center
+    @media (min-width: 768px)
+      grid-auto-flow: column
+      padding-left: 205px
+  
+.dialog
+  width: 100%
+  height: auto
+  max-width: 1010px
+  padding: 25px 30px
+  display: grid
+  background: #fff
+  @media (min-width: 768px)
+    padding: 25px 30px
+    margin: 115px 95px 90px
+    border: 1px solid $grey
+    border-radius: 5px
+
+  &__inner
+    width: 100%
+    height: 100%
+    padding: 20px 15px 20px 20px
+    border: 1px solid $grey
+    border-radius: 5px
+    display: flex
+    gap: 20px
+
+  &__header
+    display: grid
+    grid-auto-flow: column
+    align-items: end
+    justify-content: space-between
+    margin-bottom: 30px
+    .header__title
+      display: grid
+      align-items: start
+      line-height: 1
+    .page
+      font-size: 10px
+      font-weight: 700
+      color: $grey
+    .name
+      font-weight: bold
+      font-size: 25px
+      color: $green
+      margin: 0
+    .new-window
+      width: 24px
+      height: 24px
+      display: block
+      mask: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.75 20.75H3.25V3.25H12V0.75H3.25C1.8625 0.75 0.75 1.875 0.75 3.25V20.75C0.75 22.125 1.8625 23.25 3.25 23.25H20.75C22.125 23.25 23.25 22.125 23.25 20.75V12H20.75V20.75ZM14.5 0.75V3.25H18.9875L6.7 15.5375L8.4625 17.3L20.75 5.0125V9.5H23.25V0.75H14.5Z' fill='%23B0B0B0'/%3E%3C/svg%3E%0A") no-repeat
+      background: $grey
+      &:hover
+        background: $green
+
+  .messages
+    width: 100%
+    height: auto
+    max-width: 570px
+    padding: 20px 10px
+    background: #fff
+    @media (min-width: 768px)
+      padding: 0
+    &__list
+      width: 100%
+      height: 100%
+      max-height: 450px
+      margin: 0
+      list-style: none
+      padding: 0 16px 0 0
+      display: grid
+      gap: 40px
+      overflow-y: auto
+    &__item
+      &--user
+        display: grid
+        justify-self: end
+        justify-content: end
+        gap: 8px
+        img
+          width: auto
+          height: 100%
+          max-width: 250px
+          max-height: 133px
+          border-radius: 5px
+          object-fit: cover
+        p
+          padding: 13px 15px
+          color: #fff
+          background: $green
+          border-radius: 9px 9px 0px 9px
+          margin: 0
+      &--companion
+        display: grid
+        justify-self: start
+        justify-content: start
+        gap: 8px
+        p
+          padding: 13px 15px
+          color: #fff
+          background: $darkblue
+          border-radius: 9px 9px 9px 0px
+          margin: 0
+
+    &__info
+      width: auto
+      height: auto
+      display: grid
+      grid-auto-flow: column
+      align-items: center
+      justify-content: inherit
+      gap: 8px
+      font-size: 12px
+      line-height: 1
+      color: $grey
+    &__status
+    &__time
+    
+    .write-box
+      width: 100%
+      display: flex
+      grid-auto-flow: column
+      align-items: end
+      justify-content: start
+      gap: 12px
+      position: relative
+      .user-photo
+        width: 45px
+        height: 45px
+        background: $grey
+        border-radius: 50%
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      textarea
+        width: 100%
+        height: auto
+        padding: 10px 55px 5px 0
+        margin-top: 15px
+        height: auto
+        border: none
+        border-bottom: 2px solid $grey
+        font-size: 14px
+        line-height: 16px
+        resize: none
+        &:placeholder
+          font-size: 14px
+          color: $grey
+      .btn--send
+        margin-left: 15px
+        @media (min-width: 768px)
+          width: 38px
+          height: 38px
+          &::after
+            width: 20px
+            height: 17px
+            left: 7px
+  
+  .feedback
+    width: 100%
+    max-width: 320px
+    min-height: 408px
+    padding: 16px
+    border: 4px dashed $green
+    border-radius: 9px
+    display: grid
+    align-content: space-between
+    &.red
+      border-color: rgba(234, 67, 53, 1)
+      .feedback__info .name
+        color: rgba(234, 67, 53, 1)
+    &__header
+      width: 100%
+      display: flex
+      justify-content: space-between
+    &__info
+      line-height: 1
+      display: grid
+      gap: 5px
+      margin-bottom: 12px
+      .time
+        font-size: 10px
+        font-weight: bold
+        color: $grey
+      .name
+        font-weight: bold
+        font-size: 22px
+        color: $green
+        padding: 0
+        &::before
+          display: none
+      .organization
+        font-size: 15px
+        font-weight: bold
+        color: $grey
+    .qr-code
+      width: auto
+      height: 38px
+      display: flex
+      gap: 5px
+      position: relative
+      .qr
+        width: 40px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 158 159' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M2.96106 35.853C2.96106 27.5442 2.96106 19.1216 2.96106 10.8128C2.96106 8.53642 3.30269 6.26004 4.89697 4.43894C6.71901 2.3902 9.11043 1.59347 11.7296 1.59347C16.2847 1.59347 20.8398 1.59347 25.3949 1.59347C29.6083 1.59347 33.8218 1.59347 38.1491 1.59347C39.174 1.59347 39.174 0 38.1491 0C29.4945 0 20.8398 0 12.0712 0C9.7937 0 7.7439 0.341457 5.80799 1.59347C3.07493 3.41457 1.48065 6.48768 1.36677 9.78843C1.2529 13.8859 1.36677 17.9834 1.36677 22.1947C1.36677 26.7475 1.36677 31.3002 1.36677 35.853C1.36677 36.8774 2.96106 36.8774 2.96106 35.853Z' fill='%234EA42F'/%3E%3Cpath d='M35.8714 157.07C27.5583 157.07 19.1314 157.07 10.8183 157.07C8.5408 157.07 6.26325 156.729 4.44122 155.135C2.39142 153.314 1.59428 150.924 1.59428 148.306C1.59428 143.753 1.59428 139.201 1.59428 134.648C1.59428 130.437 1.59428 126.225 1.59428 121.9C1.59428 120.876 0 120.876 0 121.9C0 130.55 0 139.201 0 147.965C0 150.241 0.341632 152.29 1.59428 154.225C3.41632 157.07 6.49101 158.55 9.79345 158.664C13.893 158.778 17.9926 158.664 22.2061 158.664C26.7612 158.664 31.3163 158.664 35.8714 158.664C36.8963 158.664 36.8963 157.07 35.8714 157.07Z' fill='%234EA42F'/%3E%3Cpath d='M156.353 121.672C156.353 129.981 156.353 138.404 156.353 146.713C156.353 148.989 156.012 151.265 154.417 153.086C152.595 155.135 150.204 155.932 147.585 155.932C143.03 155.932 138.474 155.932 133.919 155.932C129.706 155.932 125.492 155.932 121.165 155.932C120.14 155.932 120.14 157.525 121.165 157.525C129.82 157.525 138.474 157.525 147.243 157.525C149.521 157.525 151.57 157.184 153.506 155.932C156.353 154.111 157.834 151.038 157.947 147.737C158.061 143.64 157.947 139.542 157.947 135.331C157.947 130.778 157.947 126.225 157.947 121.672C157.947 120.648 156.353 120.648 156.353 121.672Z' fill='%234EA42F'/%3E%3Cpath d='M121.621 1.59364C129.934 1.59364 138.361 1.59364 146.674 1.59364C148.951 1.59364 151.229 1.93509 153.051 3.52856C155.101 5.34966 155.898 7.73986 155.898 10.3577C155.898 14.9105 155.898 19.4632 155.898 24.016C155.898 28.2273 155.898 32.4386 155.898 36.7637C155.898 37.7881 157.492 37.7881 157.492 36.7637C157.492 28.1135 157.492 19.4632 157.492 10.6992C157.492 8.42277 157.15 6.37403 155.898 4.43911C154.076 1.59364 151.001 0.11399 147.699 0.000171166C143.599 -0.113648 139.499 0.000171166 135.286 0.000171166C130.731 0.000171166 126.176 0.000171166 121.621 0.000171166C120.596 0.000171166 120.596 1.59364 121.621 1.59364Z' fill='%234EA42F'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='157.948' height='158.664' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat
+      &__desc
+        display: grid
+        align-content: center
+        justify-content: center
+        line-height: 1
+        gap: 5px
+      span
+        font-weight: 700
+        font-size: 12px
+
+    &__text
+      width: 100%
+      height: 150px
+      padding: 12px 11px 20px
+      margin: 0
+      display: flex
+      justify-content: flex-start
+      font-size: 12px
+      line-height: 1.36
+      color: #FFFFFF
+      background: $darkblue
+      border-radius: 9px
+      p
+        margin: 0
+      @media (min-width: 768px)
+        font-size: 15px
+        line-height: 20px
+      // @media (min-width: 1600px)
+
+    h3.title
+      padding: 0
+      font-size: 10px
+      font-weight: 700
+      color: $grey
+      text-transform: lowercase
+      &::before
+        display: none
+
+    .uploaded
+      grid-template-rows: repeat(auto-fill, 59px)
+      gap: 14px
+      margin: 11px 0
+      .uploaded-image
+        display: inline-block
+        width: 59px
+        height: 59px
+
+
+    .status,
+    .assignment
+      width: 100%
+      display: grid
+      align-items: center
+      &__select
+        width: 100%
+        height: auto
+        display: flex
+        gap: 5px
+      span
+        font-size: 15px
+        font-weight: bold
+        margin-right: 15px
+
+    .status
+      margin-bottom: 15px
+
+    .assignment
+      padding-left: 46px
+      position: relative
+      span
+        &::before
+          content: ''
+          width: 32px
+          height: 32px
+          background: #FFB21E
+          position: absolute
+          left: 0
+          bottom: 7px
+      .btns
+        display: flex
+        gap: 5px
+
+    .rate
+      margin: 16px 0 0
+      justify-content: flex-start
+      gap: 27px
+      position: relative
+      input[type="radio"]
+        &+img
+          max-width: 35px
+          max-height: 35px
+
+      .btn--comment
+        margin-left: auto
+        position: relative
+        
+      .feedback__comment
+        width: auto
+        max-width: 260px
+        height: auto
+        padding: 15px
+        position: absolute
+        top: -20px
+        right: 20px 
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: flex-start
+        background: #fff
+        filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25))
+        z-index: -10
+        visibility: hidden
+        transform: scale(0)
+        transition: .3s
+        &::after
+          content: ''
+          position: absolute
+          right: 20px 
+          top: -20px
+          border: 10px solid transparent
+          border-bottom: 10px solid #fff
+        &.open
+          top: 55px
+          right: -20px
+          z-index: 10
+          visibility: visible
+          transform: scale(1)
+        p
+          width: 100%
+          max-width: 160px
+          margin: 0
+          font-size: 15px
+          font-weight: 400
+        textarea
+          padding: 10px 35px 0 0
+
+
+
+.write-box
+  width: 100%
+  display: flex
+  align-items: end
+  justify-content: start
+  gap: 12px
+  position: relative
+  .user-photo
+    width: 45px
+    height: 45px
+    background: $grey
+    border-radius: 50%
+    overflow: hidden
+    display: flex
+    align-items: center
+    flex-shrink: 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  textarea
+    width: 100%
+    height: auto
+    padding: 10px 35px 5px 0
+    margin-top: 15px
+    height: auto
+    border: none
+    border-bottom: 2px solid $grey
+    font-size: 14px
+    line-height: 16px
+    resize: none
+    &:placeholder
+      font-size: 14px
+      color: $grey
+  .wrap-textarea
+    display: flex
+    position: relative
+    .btns
+      position: absolute
+      top: 50%
+      right: 0

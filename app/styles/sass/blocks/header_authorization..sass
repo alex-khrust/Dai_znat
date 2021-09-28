@@ -19,9 +19,12 @@ header
   .container
     max-width: 1200px
     padding: 25px 30px
+    padding-top: 18px
+    padding-right: calc(30px - 7px)
     position: relative
     @media (min-width: 768px)
       padding: 9px 45px
+      padding-right: calc(45px - 7px)
       display: grid
       grid-auto-flow: column
       align-items: center
@@ -31,6 +34,8 @@ header
 
 
   .header__top
+    width: 100%
+    height: 100%
     display: grid
     grid-auto-flow: column
     align-items: center
@@ -44,6 +49,7 @@ header
       width: 100%
       height: 70px
       background: url(../images/dist/white-paper-texture-background.jpg)
+      z-index: -1
     @media (min-width: 768px)
       &::before
         display: none

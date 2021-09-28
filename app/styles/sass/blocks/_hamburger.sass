@@ -1,56 +1,57 @@
 .navBurger
-  position: relative
-  cursor: pointer
-  background: #444
-  box-sizing: border-box
-  background-clip: content-box
-  outline: none
-  width: 26px
-  height: 22px
-  border: 10px solid transparent
-  border-left: none
-  border-right: none
-  border-radius: 3px
+  width: 40px
+  height: 40px
   padding: 0
-  transform: rotate(0deg)
-  transition: all 0.25s ease-in-out
+  outline: none
+  background: transparent
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
   @media (min-width: 768px)
     display: none
-  &:before,
-  &:after 
-    content: ""
-    position: absolute
-    background: #444
+  span
+    width: 26px
     height: 2px
-    width: 100%
-    right: 0
-    will-change: rotate
+    background: #444
+    border-radius: 3px
+    position: relative
     transform: rotate(0deg)
-    transition: all 0.5s ease
-  
-  &:before 
-    top: -10px
-  
-  &:after 
-    bottom: -10px
-  
-  &.active 
-    background: transparent
-    background-clip: content-box
-  
-    &:before 
-      top: 0
-      right: -2px
-      transform: rotate(135deg)
+    transition: all 0.25s ease-in-out
+    &:before,
+    &:after 
+      content: ""
+      position: absolute
       background: #444
-      width: 110%
+      height: 2px
+      width: 100%
+      right: 0
+      will-change: rotate
+      transform: rotate(0deg)
+      transition: all 0.5s ease
+    
+    &:before 
+      top: -10px
     
     &:after 
-      bottom: 0
-      right: -2px
-      transform: rotate(-135deg)
-      background: #444
-      width: 110%
+      bottom: -10px
+  
+  &.active
+    span
+      background: transparent !important
+      &:before 
+        top: 0
+        right: -2px
+        transform: rotate(135deg)
+        background: #444
+        width: 110%
+      &:after 
+        bottom: 0
+        right: -2px
+        transform: rotate(-135deg)
+        background: #444
+        width: 110%
   
 
 

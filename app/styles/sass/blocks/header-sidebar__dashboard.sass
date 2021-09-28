@@ -1,0 +1,151 @@
+.header-sidebar__dashboard
+  border-bottom: 1px solid rgba(176, 176, 176, 1)
+  transition: .3s
+  background: $darkblue
+  height: 60px
+  z-index: 999
+  color: #fff
+  @media (min-width: 768px)
+    width: 100%
+    height: 100%
+    max-width: 205px
+    position: fixed
+  @media (min-width: 1600px)
+    max-width: 255px
+  &.open
+    height: 252px
+    box-shadow: 33.32px 35.4825px 69.496px rgba(32, 32, 35, 0.19)
+
+  &+main
+    margin-top: 60px
+    @media (min-width: 768px)
+      margin-top: 0
+
+    &+footer
+      background: transparent
+      margin: 0
+      color: $grey
+      .foo-links
+        display: none
+
+  .container
+    // max-width: 1200px
+    height: 100%
+    padding: 10px 25px
+    padding-right: calc(25px - 7px)
+    position: relative
+    @media (min-width: 768px)
+      // padding: 9px 45px
+      padding: 0 !important
+      // padding-right: calc(45px - 7px)
+      display: grid
+      grid-auto-flow: row
+      align-content: start
+      // justify-content: space-between
+
+  .header__top
+    width: 100%
+    height: 100%
+    display: grid
+    grid-auto-flow: column
+    align-items: center
+    justify-content: space-between
+    @media (min-width: 768px)
+      padding: 35px 18px 0
+
+  .navBurger
+    span
+      background: #fff
+      &::before,
+      &::after
+        background: #fff
+
+  .logo
+    padding-top: 8px
+    padding-left: 22px
+    font-size: 30px
+    color: #fff !important
+    &::before
+      width: 32px
+      height: 32px
+      top: 0
+      left: 0
+    @media (min-width: 768px)
+      font-size: 29px
+
+  .menu
+    width: 100%
+    max-width: 205px
+    height: auto
+    background: $darkblue
+    position: absolute
+    top: 59px
+    right: -100%
+    transition: .3s
+    &.open
+      right: 0
+    @media (min-width: 768px)
+      max-width: 205px
+      height: 100vh
+      top: 0
+      right: unset
+      position: relative
+      padding-top: 25px
+
+    &__list
+      width: 100%
+      height: auto
+      list-style: none
+      padding: 0 0 30px
+      margin: 0
+    &__item
+      width: 100%
+      &:nth-child(6)
+        border-bottom: 1px solid $grey
+      &:nth-child(9)
+        margin-top: 45px
+    &__link
+      width: 100%
+      height: 45px
+      padding-left: 58px
+      display: flex
+      align-items: center
+      font-size: 13px
+      letter-spacing: 0.1614px
+      color: $grey
+      position: relative
+      &.active,
+      &:hover
+        background: #fff
+        color: $green
+        svg path
+          transition: .3s
+          fill: $green
+      // @media (min-width: 768px)
+      @media (min-width: 1600px)
+        font-size: 16px
+        padding-left: 78px
+      svg
+        position: absolute
+        top: 50%
+        left: 25px
+        transform: translateY(-50%)
+        @media (min-width: 768px)
+          width: 18px
+          height: 18px
+
+      span
+        width: 12px
+        height: 12px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: bold
+        font-size: 7px
+        font-weight: 700
+        text-align: center
+        text-transform: lowercase
+        color: #FFFFFF
+        background:#EA4335
+        margin-left: 10px
+  

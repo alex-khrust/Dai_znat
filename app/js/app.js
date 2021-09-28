@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     $(this).toggleClass("open");
   });
   //---------------------------------------------------------------------------
+  $(".btn--comment").click(function () {
+    $('.feedback__comment').toggleClass("open");
+  });
 
   //---------------------------------------------------------------------------
   
