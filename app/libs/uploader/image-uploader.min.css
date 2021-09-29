@@ -64,7 +64,7 @@
   grid-auto-flow: row;
   justify-content: start;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto-fill, clamp(50px, 16vw, 77px));
+  /* grid-template-rows: repeat(auto-fill, clamp(50px, 16vw, 77px)); */
   gap: 22px;
   line-height: 0;
   transition: .3s
