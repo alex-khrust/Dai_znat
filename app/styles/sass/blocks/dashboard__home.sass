@@ -1,0 +1,197 @@
+.dashboard__home
+  @media (min-width: 768px)
+    padding-left: 205px
+  @media (min-width: 1300px)
+    padding-left: 255px
+  .container
+    width: 100%
+    height: auto
+    max-width: 1010px
+    margin: 30px auto 80px
+    display: grid
+    align-items: center
+    gap: 13px
+    grid-template: 'requests' 'dialogues' 'customer-requests'
+    @media (min-width: 1300px)
+      grid-template: 'requests dialogues' 'customer-requests customer-requests'
+
+  .requests
+    grid-area: requests
+    ul
+      min-width: 450px
+  .dialogues
+    grid-area: dialogues
+    ul
+      min-width: 400px
+  .customer-requests
+    grid-area: customer-requests
+    ul
+      min-width: 600px
+    @media (min-width: 1300px)
+      .btn
+        width: 154px
+        height: 44px
+        font-size: 14px
+
+.dashboard-section
+  background: #FFFFFF
+  border: 1px solid #BDBDBD
+  border-radius: 5px
+  overflow: auto
+  &__header
+    width: 100%
+    height: auto
+    padding: 35px 25px 14px 25px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-flow: wrap
+    gap: 10px
+    .title
+    .link__more
+      padding: 10px 0 10px 10px
+      margin-left: auto
+      font-size: 14px
+      line-height: 16px
+      letter-spacing: 0.2px
+      color: $grey
+      &:hover
+        color: $green
+
+  @media ( min-width: 1300px)
+    &:nth-child(2)
+      .dashboard-section__list li
+        &::before
+          display: none
+  
+  &__inner
+    width: 100%
+    overflow: auto
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      padding: 10px 25px
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 10px
+      @media (min-width: 768px)
+        gap: 30px
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 7px
+        height: 100%
+      &:nth-child(odd)
+        background: rgba(243, 243, 243, 0.63)
+      &:nth-child(4n+1)
+        &::before
+          background: rgba(24, 119, 242, 1)
+      &:nth-child(4n+2)
+        &::before
+          background: rgba(234, 67, 53, 1)
+      &:nth-child(4n+3)
+        &::before
+          background: $green
+      &:nth-child(4n+4)
+        &::before
+          background: rgba(243, 217, 16, 1)
+
+    .client
+      display: grid
+      grid-template-columns: repeat (2, 1fr )
+      grid-template: 'photo name notification''photo data notification'
+      justify-content: start
+      align-items: center
+      column-gap: 10px
+      line-height: 1
+      &__photo
+        width: 45px
+        height: 45px
+        overflow: hidden
+        grid-area: photo
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      &__name
+        grid-area: name
+        font-weight: bold
+        font-size: 18px
+        line-height: 21px
+        color: #000000
+      .data
+        grid-area: data
+        font-weight: bold
+        font-size: 10px
+        line-height: 12px
+        color: $grey
+      .notification
+        align-self: start
+        grid-area: notification
+        margin-top: 8px
+
+    .company,
+    .status
+      display: grid
+      align-items: center
+      justify-content: center
+      text-align: center
+      &__title
+        font-weight: bold
+        font-size: 10px
+        line-height: 12px
+        color: #B0B0B0
+      &__name
+        font-weight: bold
+        font-size: 15px
+        line-height: 18px
+      &__select
+        width: 100%
+        height: auto
+        font-size: 15px
+        font-weight: bold
+        color: $darkblue
+        display: flex
+        gap: 10px
+
+    .status
+      justify-items: start
+
+    .btns
+      gap: 5px
+      
+    .btn
+      width: 123px
+      height: 35px
+      background: $green
+      color: #fff
+      border: 1px solid $green
+      border-radius: 4px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: bold
+      font-size: 11.2509px
+      &:hover
+        background: #fff
+        color: $green
+
+    .btn--menu
+      width: 20px
+
+    .btn--delete
+      width: 20px
+      height: 40px
+      margin-left: 10px
+
+    .link--grey
+      padding: 10px 0 10px 10px
+      font-size: 14px
+      line-height: 16px
+      letter-spacing: 0.2px

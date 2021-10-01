@@ -62,6 +62,10 @@ a.link
 		color: $darkblue
 		&:hover
 			color: $green
+	&--grey
+		color: $grey
+		&:hover
+			color: $green
 
 
 .btns
@@ -105,7 +109,8 @@ a.link
 		&:hover
 			background: $green
 
-	&--delite
+	&--delite,
+	&--delete
 		width: 20px
 		height: 20px
 		display: flex
@@ -164,6 +169,15 @@ a.link
 		background: $grey
 		&:hover
 			background: $green
+
+	&--menu
+		width: 40px
+		height: 20px
+		position: relative
+		mask: url("data:image/svg+xml,%3Csvg width='4' height='16' viewBox='0 0 4 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z' fill='%23C2C9D1'/%3E%3Cpath d='M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z' fill='black' fill-opacity='0.25'/%3E%3C/svg%3E%0A") no-repeat center
+		background: $grey
+		&:hover
+			background: $green
 	
 
 ::-webkit-scrollbar
@@ -171,3 +185,18 @@ a.link
 ::-webkit-scrollbar-thumb
 	background: #C4C4C4
 	border-radius: 10px
+
+
+.notification
+	width: 12px
+	height: 12px
+	margin-left: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	text-transform: lowercase
+	font-size: 7px
+	font-weight: 700
+	background:#ea4335
+	color: #fff
