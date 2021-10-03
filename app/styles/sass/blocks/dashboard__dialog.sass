@@ -31,6 +31,7 @@
     border-radius: 5px
     display: flex
     flex-flow: column-reverse
+    justify-content: space-between
     gap: 20px
     @media (min-width: 768px)
       padding: 20px 15px 20px 20px
@@ -69,11 +70,11 @@
   .messages
     width: 100%
     height: auto
-    // max-width: 570px
     padding: 20px 0
+    display: grid
     background: #fff
     @media (min-width: 768px)
-      padding: 20px 10px
+      padding: 20px 10px 0
     &__list
       width: 100%
       height: 100%
@@ -82,6 +83,7 @@
       list-style: none
       padding: 0 16px 0 0
       display: grid
+      align-content: start
       gap: 40px
       overflow-y: auto
     &__item
@@ -243,7 +245,7 @@
 
     &__text
       width: 100%
-      height: 150px
+      min-height: 150px
       padding: 12px 11px 20px
       margin: 0
       display: flex

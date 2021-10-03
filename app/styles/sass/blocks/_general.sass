@@ -67,7 +67,6 @@ a.link
 		&:hover
 			color: $green
 
-
 .btns
 	display: grid
 	grid-auto-flow: column dense
@@ -129,7 +128,7 @@ a.link
 		background: $grey
 		&:hover
 			background: $green
-	
+
 	&--send
 		width: 27px
 		height: 27px
@@ -178,14 +177,12 @@ a.link
 		background: $grey
 		&:hover
 			background: $green
-	
 
 ::-webkit-scrollbar
 	width: 8px
 ::-webkit-scrollbar-thumb
 	background: #C4C4C4
 	border-radius: 10px
-
 
 .notification
 	width: 12px
@@ -198,5 +195,42 @@ a.link
 	text-transform: lowercase
 	font-size: 7px
 	font-weight: 700
-	background:#ea4335
+	background: #ea4335
 	color: #fff
+
+.btn--close
+	width: 40px
+	height: 40px
+	padding: 0
+	margin: 5px
+	position: absolute
+	top: 0
+	right: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	border: none
+	cursor: pointer
+	background: none
+	transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+	transition-delay: 0.3s
+
+	span
+		width: 20px
+		height: 2px
+		position: relative
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			left: 0
+			height: inherit
+			width: 110%
+			background: #444
+			border-radius: 2px
+		&:before
+			top: 0
+			transform: rotate(45deg)
+		&:after
+			top: 0
+			transform: rotate(-45deg)

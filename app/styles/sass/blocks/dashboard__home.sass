@@ -1,15 +1,19 @@
-.dashboard__home
+.dashboard__home,
+.dashboard__home + footer
   @media (min-width: 768px)
-    padding-left: 205px
+    padding-left: 205px !important
   @media (min-width: 1300px)
-    padding-left: 255px
+    padding-left: 255px !important
+
+.dashboard__home
   .container
     width: 100%
     height: auto
     max-width: 1010px
-    margin: 30px auto 80px
+    margin: 30px auto 0
     display: grid
     align-items: center
+    align-content: center
     gap: 13px
     grid-template: 'requests' 'dialogues' 'customer-requests'
     @media (min-width: 1300px)

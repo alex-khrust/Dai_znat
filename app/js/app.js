@@ -21,11 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     $(".header__authorization, .menu").toggleClass("open");
     $("body").toggleClass("locked");
   });
-  $("main, footer").click(function () {
-    $("#navToggle").removeClass("active");
-    $(".header__authorization, .menu").removeClass("open");
-    $("body").removeClass("locked");
-  });
+  // $(document).mouseup(function (e) {
+  //   var container = $("header");
+  //   if (container.has(e.target).length === 0){
+  //     $("#navToggle").removeClass("active");
+  //     $(".header__authorization, .menu").removeClass("open");
+  //     $("body").removeClass("locked");
+  //   }
+  // });
   $(".header__enter").click(function () {
     $(this).toggleClass("open");
   });
@@ -33,7 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
   $(".btn--comment").click(function () {
     $('.feedback__comment').toggleClass("open");
   });
-
+  //---------------------------------------------------------------------------
+  // $(':radio:not(:checked)').attr('disabled', true);
+  //---------------------------------------------------------------------------
+  $(".btn--menu, .overlay, .btn--close").on("click", function () {
+    var popup__name = $('.' + $(this).attr("rel"));
+    $(popup__name).addClass("open");
+    $("body").addClass("locked");
+  });
+  $(".overlay, .btn--close").on("click", function () {
+    $(".popup").removeClass("open");
+    $("body").removeClass("locked");
+  });
   //---------------------------------------------------------------------------
   
 });
