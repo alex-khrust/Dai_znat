@@ -1,0 +1,175 @@
+<!--#set var="title" value="Дай знать | Диалог" -->
+<!--#include virtual="/parts/header__dashboard.html" -->
+
+  <main class="dashboard__dialog">
+    <div class="container">
+      <section class="dialog">
+
+        <div class="dialog__header">
+          <div class="header__title">
+            <span class="page">диалог:</span>
+            <h1 class="name">Devon Lane</h1>
+          </div>
+          <a href="" class="new-window"></a>
+        </div>
+
+        <div class="dialog__inner">
+
+          <div class="messages">
+            <ul class="messages__list">
+              <li class="messages__item--companion">
+                <img src="images/dist/img-messag-demo.jpg" alt="Изображение">
+                <div class="messages__info">
+                  <span class="messages__time">11:50</span>
+                </div>
+              </li>
+              <li class="messages__item--companion">
+                <p>Hi, Emmie. Sure, but now I’m busy rn.</p>
+                <div class="messages__info">
+                  <span class="messages__time">11:50</span>
+                </div>
+              </li>
+              <li class="messages__item--user">
+                <p>Hey, Devon. Can we get on a quick call?</p>
+                <div class="messages__info">
+                  <span class="messages__status">прочитано</span>
+                  <span class="messages__time">11:50</span>
+                </div>
+              </li>
+              <li class="messages__item--companion">
+                <p>Hi, Emmie. Sure, but now I’m busy rn.</p>
+                <div class="messages__info">
+                  <span class="messages__time">11:50</span>
+                </div>
+              </li>
+            </ul>
+            <form class="write-box" action="" method="POST">
+              <div class="user-photo">
+                <img src="images/dist/photo.jpg" alt="Фото пользователя">
+              </div>
+              <div class="wrap-textarea">
+                <textarea name="" id="" placeholder="Сообщение" cols="300" rows="2" required></textarea>
+                <div class="btns">
+                  <button class="btn--upload-img"></button>
+                  <button class="btn--smiles"></button>
+                </div>
+              </div>
+              <button class="btn--send" type="submit"></button>
+            </form>
+          </div>
+
+          <div class="feedback">
+
+            <div class="feedback__header">
+              <div class="feedback__info">
+                <time class="time" datetime="2021-12-12 23:00">23:00  12.12.2021</time>
+                <h2 class="name">Devon Lane</h2>
+                <div class="organization">Фламінго</div>
+              </div>
+
+              <div class="qr-code">
+                <div class="qr">
+                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="38" height="38" fill="url(#pattern0)"/>
+                    <g clip-path="url(#clip0)">
+                    <path d="M3.24049 9.97174C3.24049 8.24642 3.24049 6.49746 3.24049 4.77214C3.24049 4.29945 3.31143 3.82676 3.64248 3.4486C4.02083 3.02318 4.51741 2.85774 5.06128 2.85774C6.00715 2.85774 6.95301 2.85774 7.89888 2.85774C8.77381 2.85774 9.64873 2.85774 10.5473 2.85774C10.7601 2.85774 10.7601 2.52686 10.5473 2.52686C8.75016 2.52686 6.95301 2.52686 5.13222 2.52686C4.65929 2.52686 4.23365 2.59776 3.83166 2.85774C3.26414 3.23589 2.93308 3.87402 2.90944 4.55943C2.88579 5.41027 2.90944 6.26111 2.90944 7.13559C2.90944 8.08097 2.90944 9.02636 2.90944 9.97174C2.90944 10.1844 3.24049 10.1844 3.24049 9.97174Z" fill="#4EA42F"/>
+                    <path d="M10.0742 35.1425C8.34798 35.1425 6.59813 35.1425 4.87192 35.1425C4.39899 35.1425 3.92605 35.0716 3.54771 34.7408C3.12207 34.3626 2.95654 33.8663 2.95654 33.3227C2.95654 32.3773 2.95654 31.4319 2.95654 30.4865C2.95654 29.6121 2.95654 28.7376 2.95654 27.8395C2.95654 27.6268 2.62549 27.6268 2.62549 27.8395C2.62549 29.6357 2.62549 31.4319 2.62549 33.2518C2.62549 33.7245 2.69643 34.1499 2.95654 34.5517C3.33489 35.1425 3.97335 35.4498 4.6591 35.4734C5.51038 35.4971 6.36166 35.4734 7.23659 35.4734C8.18245 35.4734 9.12832 35.4734 10.0742 35.4734C10.287 35.4734 10.287 35.1425 10.0742 35.1425Z" fill="#4EA42F"/>
+                    <path d="M35.0924 27.7921C35.0924 29.5174 35.0924 31.2664 35.0924 32.9917C35.0924 33.4644 35.0215 33.9371 34.6904 34.3152C34.3121 34.7407 33.8155 34.9061 33.2716 34.9061C32.3257 34.9061 31.3799 34.9061 30.434 34.9061C29.5591 34.9061 28.6842 34.9061 27.7856 34.9061C27.5728 34.9061 27.5728 35.237 27.7856 35.237C29.5827 35.237 31.3799 35.237 33.2007 35.237C33.6736 35.237 34.0992 35.1661 34.5012 34.9061C35.0924 34.5279 35.3998 33.8898 35.4235 33.2044C35.4471 32.3536 35.4235 31.5027 35.4235 30.6282C35.4235 29.6829 35.4235 28.7375 35.4235 27.7921C35.4235 27.5794 35.0924 27.5794 35.0924 27.7921Z" fill="#4EA42F"/>
+                    <path d="M27.8803 2.85775C29.6065 2.85775 31.3564 2.85775 33.0826 2.85775C33.5555 2.85775 34.0284 2.92865 34.4068 3.25953C34.8324 3.63768 34.998 4.13401 34.998 4.6776C34.998 5.62299 34.998 6.56837 34.998 7.51375C34.998 8.38823 34.998 9.2627 34.998 10.1608C34.998 10.3735 35.329 10.3735 35.329 10.1608C35.329 8.36459 35.329 6.56837 35.329 4.74851C35.329 4.27582 35.2581 3.8504 34.998 3.44861C34.6196 2.85775 33.9812 2.5505 33.2954 2.52686C32.4441 2.50323 31.5928 2.52686 30.7179 2.52686C29.7721 2.52686 28.8262 2.52686 27.8803 2.52686C27.6675 2.52686 27.6675 2.85775 27.8803 2.85775Z" fill="#4EA42F"/>
+                    </g>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="scale(0.000833333)"/>
+                    </pattern>
+                    <clipPath id="clip0">
+                    <rect width="32.7979" height="32.9465" fill="white" transform="translate(2.62549 2.52686)"/>
+                    </clipPath>
+                    <image id="image0" width="1200" height="1200" xlink:href="data:image/png;base64,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LGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsP6tdlabW08mWg8mGgZjngnGrN4KNnSYTFR1G/82D/p7MNGnwTz3OkGngjE/CxZ7kCx2OrjV55P7mDyzw2CeW8lEXyl6Zct+HzvAcsJq54QVfdHnbT6PpINgsU4y0dAJywkLWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAtaX0N5ac1vJRPemzd0JxtwKxkw/DjZ0I7iytarb+HGy65eGzb0RzPO7YJ7hw2DXbwZ36Exy+feDXR8lEyXP7EbV87hV9MreS65sK7iyPWAt1he91Vo9YUV1gg0dBPPMkiubtXnCqvuBFJ2wFi8nLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrAWqcv95jYnQdeDMTeDMYfJYjeCMXvBlfWTW3Q3WOz9ZKKNYENvBfMcJVd2FEz0VjDPRnJl7we36G4yUXJle0UvSPSq3Sx69SebwZVdBlbJCau7UjRoEIxZTRZbC8b0q05Yo2Ce4dN9whoGE42qTlj9ohcketUGbf4+nLCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYOlfrVWwkh9IL1msV/QDmSe/xqm35GQGLGABS8ASsIAlYAlYwAKWgAUsAUvAApaABSxgAQtYAhawBCwBC1gCFrCABSxgCVjAErAELGAJWMACFrCAJWABS8ASsIAlYAELWAKWgAUsAUvAApaABSxgCVgCFrAELAELWAIWsIAlYAlYwBKwBCxgCVjAApaAJWABS8ASsIAlYAELWAKWgAUsAUvAAhaw3AJgAUvAErCAJWAJWMACloAFLAFLwAKWgAUsYAELWP/hDkfNXQjGjB4Fi/0+mOd8sthRsNjdZKLkFt2dNHctWexr/ea+FYz5r2Sxt4NdvxHM82owz+S/g4neij4OQXeX8qe/E1zZIbAaGwffz27ykZ0Fix0E86xWfdEnyURVt3G6UnRpg0V7Hp3k8ofBRNHHIbmyyVKCVXXiBRawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYFe2tNfdCMGbtN9Pm3hg2txWMGf42WOxaMlEwz/RxcBtvJ7foW8GGvh+M+U6y2FGw6zeDeQbJLfphsOvXIvmCrgUbup3s+lYw5k4w5g/JYq8EV3YVWO2dsLptfkEW7osenbDmRVc/W8oTb1mjYENrS3nifQIsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1j/3M5qc8/Ng46DMb/oNPdssuv/DxabBIt1gqtfPQw29LfkFj0bbOjFYMzzyWJfBLv+LJjnT8ktGgS73kieR/LwzyevbLLrrwRjXit69efPB1d/CVglJ6xe1WLJF71TtdhkpahJ1Y46RV/0XpsvyHyl6EDTTyZauBPWQdV97LX5DwRYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYDW0P2hucxz0OFjsjwfN/SJZbC8Yc1BW0YbGG8G9Trb9TpsvyGfJHfpucGWvJBMlO/ppsNi5ZLHkefwgeK67ycPfDBbbB1bJCaubfK5mi/ZFH1XdouX8orfacNGex7DNE2/0++g6YQELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIC1QF3pNbcRjOk9KNrQJ8liZ7vNnZ8FJTu6ECz2QjCm+1xwZe8EG/o8ubLP23yLzlU9j6QfB7fx1WTXZ4KJtqt+H6eDW7QLrBNa8kXvJ9+9Vk9Y86Krn7V54m33eSRNlvKV7TlhAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSwBC1jAAhawgAUsYAELWMACFrAELGABC1jAAhawgAUsYAELWMASsIAFLGABC1jAAhawgAUsYAFLwAIWsIAFLGABC1jAAhawgAUsAQtYwAIWsIAFLGABC1jAAhawBCxgAQtYwAIWsIAFLGABC1jAErCABSxgAQtYwAIWsIAFLGABS8ACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAlYAELWMD6cnrQC9oIxmwHY9aTxc52mzs/C0ou/0Kw2AvBmO5xsNiVoqvvfhgs9s7CPY+k/wuu7F6y60/a/H1Mgyt7DKz2vujdYMwgGLO6UnSgGVVdfqsnrHHRrY5OWAdL+TySpk/3iRdYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYBX0eBy0G4zZD8bsJIvtBWMOykp2NAh6LVjr50W3evx6sNjrwTwXkysbVz2Pqlf2TtXz+FUw5nKy2OVgog+A9RQ3WSlqUvVFTw4rZT/ZXrDYOJhnnlzZtOp5tHrCWi36U9Ct+gcyBhawgAUsYAELWMACFrAELGABC1jAAhawgAUsYAELWMASsIAFLGABC1jAAhawgAUsYAFLwAIWsIAFLGABC1jAAhawgAUsAQtYwAIWsIAFLGABC1jAAhawBCxgAQtYwAIWsIAFLGABC1jAErCABSxgAQtYwAIWsIAFLGABS8ACFrCABSxgAQtYAhawgAUsAQtYwAIWsIAFLGAJWMACFrAELGABC1jAAhawgCVgAQtYwAIWsIAFLGABC1jAApaABSxgAQtYwAIWsIAFLGABC1gL1BfzoC+CiT4L5vnfql3f7AStBv062PV7yWLPBIu9Fiz2SXL5Z4INXQrmOU5u0a2q55Fc2V/bfB7DYMxasthaMNEOsEqaJV+QWTDRQTBPp90HEtQPxgyTxTpFX/Rem3eo7IRV1mgpn0fPCQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMAC1pfT0VrQUTDRX6bNvTcMuh8s9n4yUbCh6e1gzG+Txd4LJhoHt/pssti5YMzV4DYeJw9/O1js/LCol4INfXPhnsfvgsUeAGuxTlitftEnyURVt2iaLDYPJhoH83RXigaNq57HWtFBdaXqxLu2cM9jtpQ/fWABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCeZrAejYIeFS3212Sxo2Ciu8lEyY7uTpq70g+6Fkx0EGz6wqho0GFw9cfJlb0YjDk3KupiMOZ7ya6Pg8u/HMzz9WSxI2CpnUZVX/TVYMzBol192Qlr1Oaup05YwAIWsIAFLAELWMACloAFLGABC1jAAhawBCxgAQtYAhawgAUsYAELWMASsIAFLGAJWMACFrCABSxgAUvAAhawgCVgAQtYwAIWsIAFLAELWMACloAFLGABC1jAAhawBCxgAQtYAhawgAUsYAELWMASsIAFLGAJWMACFrCABSxgAUvAAhawgCVgAQtYAhawgAUsAQtYwAIWsIAFLGAJWMACFrAELGABC1jAAhawgCVgAQtYwBKwgAUsYAELWMACloAFLGABS8ACFrBOAlhlDyQZNCj6VUc/kH4y0cn9gVQ9j05y+cMqsJIrm7T5PMrqBRsaAwtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMAC1j93ud/c5iToejDmZjDmMFnsRjBmL7iyftVtfJzs+vOi5/H1ftGgHya7HgW9FCx2MbmPyYb+HMxzO7lFx0UP/1Fyi94Oruw+sEq+6L0ny9ikzRPWcp54ky/6vOrEO2rzNrZ6wpoli82W8kcELGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMAC1kkFa2+tua1konvT5u4EY24FY6YfBxu6EVzZWnJlR8GG7lc9j6vD5s4NiwZdDTZ0nNzGjWDM96ZF3Q7G/CrZ9XHRM3uYPI+HwFqsE1YvmGgQjFlNPlfTNk9Yo2Ce4ZOTWtkJq79SVL9oQ2UnrBMcsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgCVjAAhawgAUsYAELWMACFrCAJWABC1jAAhawgAUsYAELWMACloAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABaz/cDurza0nE60HEw2DMc8EY1ZvBRs6TCZKrux8MM9WMtGzneZeDMacSRY7U7TYs/Og42DMtdWifl20ofnfi35DHwW3sXMqGHMJWE5YC3TC6hTdolafR6fqTZtUnbAmi/YbmiW77gZjxsACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABq6X2B81tJxNtBxNtBWOGwZjBnWBDN5OJkiv7/UFzN5OJXiy6RWXP4wfBlb2ZLHZ13NyPkucRbOjgo2BDD4INjXeCMfvBmJ8kV/aNYMw+sJyw/v0TVlkLd8Iq+6IPg8X6bT6P6UrRqzYoOjw5YQELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIC1UO12m9tIJnq519x2MGY9GNO7F2zoenBl3eTKHs2ae5hMdCrY0LeDq3+56nlcqXqLXg0W+07yYKuex2+Sh/9csKHNZJ5ksfVgzC6w2jthLVxlJ6xRMM+w6oR18EQFz2Mtefjzot+HExawgCVgAQtYwAIWsIAFLGABC1jAApaABSxgAQtYwAIWsIAFLGABC1gCFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsIAELWMACFrCABSxgAQtYwAIWsAQsYAELWMACFrCABSxgAQtYwBKwgAUsYAELWMACFrCABawvq91uc6d7QRvBmO1gzHqy2FYwZjO4sm5yiy4E85xLJjoVTPTLYJ4HyS16UPSCfFL1PHaS1ZLF3p41dxSMmT0fLPZ6MM+HyWJng4e/C6zF+oIMgjGrK0Uf0P6JPWHNkiubFb0g86rnMYp+IEGTqne/1RNvzwkLWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFrAXq3XFzu+OiQfvBmJ1ksb1gzOVkouQWHQbzXE0muhRM9EEwz+Pkyh4XvSCfVj2Pw+j7GXS/6t2veh5RV4LF3gWWJAFLErAkCViSBCxJwJIkYEkSsCQBS5KAJUnAkgQsSQKWJAFLErAkCViSBCxJwJIkYEkSsCQBS5KAJQlYkgQsSQKWJGBJErAkCViSgCVJwJIkYEkCliQBS5KAJQlYkgQsSQKWJGBJErAkCViSgCVJwJIkYEkCliQBS5KAJQlYkgQsSQKWJGBJErAkAUuSgCVJwJIELEkCliQBSxKwJAlYkgQsScCSJGBJErAkAUuSgCVJwJIELEkCliQBSxKwJAlYkgQsScCSJGBJErAkAUuSgCVJwJIELEkCliRgSRKwJAlYkoAlScCSJGBJApYkAUuSgCUJWJIELEkCliRgSRKwJAlYkoAlScCSJGBJApYkAUuSgCUJWJIELEkCliRgSRKwJAHLLZAELEkCliRgSRKwJAlYkoAlScCSJGBJApYkAUuSgCUJWJIELEkCliRgSRKwJAlYkoAlScCSJGBJApYkAUuSgCUJWJIELEkCliRgSRKwJAFLkoAlScCSBCxJApYkAUsSsCQJWJIELEnAkqRF6h9XuEhW7XLb8AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNS0xN1QxMzoxNzowNCswMDowMHA3qlEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDUtMTdUMTM6MTc6MDQrMDA6MDABahLtAAAAAElFTkSuQmCC"/>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="qr-code__desc">
+                  <h3 class="title">qr-code</h3>
+                  <span>Тераса</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feedback__text">
+              <p>Доброго дня! Мені подали холодну каву! Я попросила офіціанта замінити її, але мені дуже нахабно відмовили. Однозначно, негативний відгук!</p>
+            </div>
+
+            <div class="uploaded">
+              <div class="uploaded-image" data-index="0">
+                <img src="images/dist/img-messag-demo.jpg" alt="Изображение">
+              </div>
+              <div class="uploaded-image" data-index="0">
+                <img src="images/dist/img-messag-demo.jpg" alt="Изображение">
+              </div>
+              <div class="uploaded-image" data-index="0">
+                <img src="images/dist/img-messag-demo.jpg" alt="Изображение">
+              </div>
+              <div class="uploaded-image" data-index="0">
+                <img src="images/dist/img-messag-demo.jpg" alt="Изображение">
+              </div>
+            </div>
+
+            <div class="status">
+              <h3 class="title">статус обращения</h3>
+              <div class="status__select">
+                <span>В работе 🚀</span>
+                <button class="btn--edit"></button>
+              </div>
+            </div>
+            
+            <div class="assignment">
+              <h3 class="title">призначення</h3>
+              <div class="assignment__select">
+                <span>Обслуговування</span>
+                <div class="btns">
+                  <button class="btn--edit"></button>
+                  <button class="btn--delite"></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="rate">
+              <label>
+                <input type="radio" name="rate" id="bad" value="bad">
+                <img src="images/dist/icons/bad.png" alt="bad">
+              </label>
+              <label>
+                <input type="radio" name="rate" id="ok" value="ok">
+                <img src="images/dist/icons/ok.png" alt="ok">
+              </label>
+              <label>
+                <input type="radio" name="rate" id="super" value="super">
+                <img src="images/dist/icons/super.png" alt="super">
+              </label>
+
+              <button class="btn--comment">
+              </button>
+              <div class="feedback__comment">
+                <p>Капризный клиент. Даже очень!</p>
+                <div class="btns">
+                  <button class="btn--edit"></button>
+                  <button class="btn--delite"></button>
+                </div>
+
+                <form class="write-box" action="" method="POST">
+                  <textarea name="" id="" placeholder="Сообщение" cols="300" rows="2" required></textarea>
+                  <button class="btn--send" type="submit"></button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- /.dialog -->
+    </div>
+  </main>
+
+<!--#include virtual="/parts/footer__dashboard.html" -->

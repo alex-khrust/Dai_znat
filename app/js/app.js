@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //---------------------------------------------------------------------------
   // $(':radio:not(:checked)').attr('disabled', true);
   //---------------------------------------------------------------------------
-  $(".btn--menu, .overlay, .btn--close").on("click", function () {
+  $(".overlay, .btn--close").on("click", function () {
     var popup__name = $('.' + $(this).attr("rel"));
     $(popup__name).addClass("open");
     $("body").addClass("locked");
@@ -49,6 +49,33 @@ document.addEventListener('DOMContentLoaded', () => {
     $("body").removeClass("locked");
   });
   //---------------------------------------------------------------------------
+  $(".btn--menu, .btn--dropmenu, .btn--dropdown").on("click", function () {
+    var dropmenu__name = $('.' + $(this).attr("rel"));
+    $(this).closest('li, .tags, .status, .comments').find('.dropmenu, .dropdown').addClass("open");
+    
+    var pos = $(this).offset()
+    $(this).closest('li, .comments').find('.dropmenu, .dropdown').offset(pos);
+  });
+
+  $(".btn--label").on("click", function () {
+    var dropmenu__name = $('.' + $(this).attr("rel"));
+    $(dropmenu__name).addClass("open");
+  });
+
+  $(document).mouseup(function (e) {
+    var container = $(".dropmenu, .dropdown, .popup");
+    if (container.has(e.target).length === 0){
+      $(container).removeClass("open");
+    }
+  });
+
+
+
+
+
+  $(document).ready(function() {
+    
+  });
   
 });
 

@@ -60,52 +60,8 @@ main
         height: 32px
         bottom: unset
         top: 0
-  .tags
-    &__list
-      list-style: none
-      padding: 0
-      margin: 0
-      display: flex
-      flex-flow: wrap
-      gap: 25px
-      &__item
-        label
-          width: auto
-          display: grid
-          grid-template: 'color title'' color name'
-          justify-content: start
-          align-items: center
-          column-gap: 15px
-          line-height: 1
-          position: relative
-        input
-          display: none
 
-    &__title
-      font-weight: bold
-      font-size: 10px
-      color: $grey
-      grid-area: title
-    &__name
-      grid-area: name
-      font-weight: bold
-      font-size: 15px
-      transition: .2s
-    &__color
-      width: 32px
-      height: 32px
-      background: $green
-      grid-area: color
-      &.red
-        background: rgba(234, 67, 53, 1)
-      &.blue
-        background: rgba(24, 119, 242, 1)
-      &.yellow
-        background: rgba(243, 217, 16, 1)
-  .chbx
-    position: absolute
-    top: -6px
-    left: 26px
+  
 
   .btn
     width: 100%
@@ -147,7 +103,62 @@ main
         span
           color: $grey
 
+.tags
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    flex-flow: wrap
+    gap: 25px
+    &__item
+      padding: 0
+      background: none
+      border: none
+      display: flex
+      align-items: baseline
+      gap: 20px
+  label,
+  .tags__select
+    width: auto
+    display: grid
+    grid-template: 'color title' 'color name'
+    justify-content: start
+    align-items: center
+    column-gap: 15px
+    line-height: 1
+    position: relative
+  input
+    display: none
 
+  &__title
+    font-weight: bold
+    font-size: 10px
+    color: $grey
+    grid-area: title
+    text-align: left
+  &__name
+    grid-area: name
+    font-weight: bold
+    font-size: 15px
+    transition: .2s
+    text-align: left
+  &__color
+    width: 32px
+    height: 32px
+    background: $green
+    grid-area: color
+    &.red
+      background: rgba(234, 67, 53, 1) !important
+    &.blue
+      background: rgba(24, 119, 242, 1) !important
+    &.yellow
+      background: rgba(243, 217, 16, 1) !important
+
+  .chbx
+    position: absolute
+    top: -6px
+    left: 26px
 
 label
   cursor: pointer

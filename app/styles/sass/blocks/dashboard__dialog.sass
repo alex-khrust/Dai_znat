@@ -2,6 +2,8 @@
   .container
     // max-width: 1200px
     padding: 0
+    padding-top: 30px
+    padding-bottom: 30px
     display: grid
     align-items: center
     justify-content: center
@@ -18,12 +20,12 @@
   padding: 25px 10px
   @media (min-width: 768px)
     padding: 25px 30px
-    margin: 115px 50px 90px
+    // margin: 115px 50px 90px
     border: 1px solid $grey
     border-radius: 5px
   @media (min-width: 1300px)
     width: 100%
-    margin: 115px 95px 90px
+    // margin: 115px 95px 90px
 
   &__inner
     width: 100%
@@ -184,7 +186,8 @@
     border: 4px dashed $green
     border-radius: 9px
     display: grid
-    align-content: space-between
+    align-items: start
+    gap: 15px
     @media (min-width: 480px)
       max-width: 100%
     @media (min-width: 768px)
@@ -204,22 +207,28 @@
       line-height: 1
       display: grid
       gap: 5px
-      margin-bottom: 12px
       .time
         font-size: 10px
         font-weight: bold
         color: $grey
+        @media (min-width: 768px)
+          font-size: 14px
       .name
         font-weight: bold
         font-size: 22px
         color: $green
         padding: 0
+        @media (min-width: 768px)
+          font-size: 30px
         &::before
           display: none
       .organization
         font-size: 15px
         font-weight: bold
         color: $grey
+        @media (min-width: 768px)
+          font-size: 20px
+
     .qr-code
       width: auto
       height: 38px
@@ -262,7 +271,7 @@
         line-height: 20px
       // @media (min-width: 1600px)
 
-    h3.title
+    .title
       padding: 0
       font-size: 10px
       font-weight: 700
@@ -285,11 +294,12 @@
         display: grid
 
 
-    .status,
-    .assignment
+    .status
       width: 100%
+      margin-bottom: 5px
       display: grid
       align-items: center
+      position: relative
       &__select
         width: 100%
         height: auto
@@ -298,82 +308,125 @@
       span
         font-size: 15px
         font-weight: bold
-        margin-right: 15px
+      &__dropdown
+      &__list
+        list-style: none
+        padding: 0
+        margin: 0
+      .red
+        color: rgba(234, 67, 53, 1)
 
-    .status
-      margin-bottom: 15px
-
-    .assignment
-      padding-left: 46px
+    .tags
       position: relative
-      span
-        &::before
-          content: ''
-          width: 32px
-          height: 32px
-          background: #FFB21E
-          position: absolute
-          left: 0
-          bottom: 7px
       .btns
         display: flex
         gap: 5px
+      &__dropdown
+      &__list
+        gap: 10px
 
-    .rate
-      margin: 16px 0 0
-      justify-content: flex-start
-      gap: 27px
-      position: relative
-      input[type="radio"]
-        &+img
-          max-width: 35px
-          max-height: 35px
-
-      .btn--comment
-        margin-left: auto
-        position: relative
-        
-      .feedback__comment
-        width: auto
-        max-width: 260px
-        height: auto
-        padding: 15px
-        position: absolute
-        top: -20px
-        right: 20px 
-        display: flex
-        flex-flow: row wrap
-        justify-content: space-between
-        align-items: flex-start
-        background: #fff
-        filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25))
-        z-index: -10
-        visibility: hidden
-        transform: scale(0)
-        transition: .3s
-        &::after
-          content: ''
-          position: absolute
-          right: 20px 
-          top: -20px
-          border: 10px solid transparent
-          border-bottom: 10px solid #fff
-        &.open
-          top: 55px
-          right: -20px
-          z-index: 10
-          visibility: visible
-          transform: scale(1)
-        p
+    .comments
+      width: 100%
+      height: 100%
+      display: grid
+      align-content: space-between
+      gap: 20px
+      &__list
+        width: 100%
+        list-style: none
+        padding: 0
+        margin: 0
+        display: grid
+        gap: 10px
+        &__item
           width: 100%
-          max-width: 160px
-          margin: 0
-          font-size: 15px
+          height: auto
+          display: grid
+          grid-template: 'header header' 'text delete'
+          align-items: start
+          justify-content: space-between
+          gap: 0 10px
+
+      &__header
+        width: 100%
+        display: flex
+        align-items: center
+        flex-flow: wrap
+        gap: 15px
+      &__data,
+      &__name
+        grid-area: header
+        font-size: 12px
+        color: $grey
+        font-size: 12px
+        color: $grey
+      &__text
+        width: 100%
+        max-width: 179px
+        grid-area: text
+        margin: 0
+        font-size: 15px
+        line-height: 20px
+      .btn--delete
+        grid-area: delete
+        justify-self: end
+
+      .btn--transparrent
+        width: 100%
+        height: 30px
+        background: none
+        border: none
+        font-weight: bold
+        font-size: 14px
+        color: $green
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        line-height: 1
+        position: relative
+        padding-right: 0
+        &::after
+          display: none
+        span
+          font-size: 34px
           font-weight: 400
-        textarea
-          padding: 10px 35px 0 0
+          display: flex
+          align-items: center
+          justify-content: center
+        &:hover
+          color: $grey
+          span
+            color: $grey
 
-
+    .feedback__comment
+      width: auto
+      max-width: 260px
+      height: auto
+      padding: 15px
+      // position: absolute
+      // top: -20px
+      // right: 20px 
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      align-items: flex-start
+      transform: scale(0)
+      &::after
+        content: ''
+        position: absolute
+        right: 20px 
+        top: -20px
+        border: 10px solid transparent
+        border-bottom: 10px solid #fff
+      p
+        width: 100%
+        max-width: 160px
+        margin: 0
+        font-size: 15px
+        font-weight: 400
+      textarea
+        padding: 10px 35px 0 0
 
 .write-box
   width: 100%
@@ -416,3 +469,65 @@
       position: absolute
       top: 50%
       right: 0
+
+  &__btns
+    width: auto
+    height: 38px
+    margin-left: 15px
+    display: grid
+    grid-auto-flow: column
+    gap: 5px
+    justify-content: center
+    button,
+    .btn--delete
+      width: 38px
+      height: 38px
+      padding: 0
+      margin: 0 !important
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid $green !important
+      border-radius: 2px
+      -webkit-mask-size: 18px
+      transition: .3s
+      position: relative
+      &::before
+        width: 16px
+        height: 16px
+        background: $green !important
+      span
+        &::before,
+        &::after
+          transition: .3s
+          background: $green
+      &:hover
+        background: $green
+        span
+          &::before,
+          &::after
+            background: #fff
+        
+          
+
+.ajax-button
+  position: relative
+  display: inline-block
+  width: 100px
+  height: 40px
+  margin-left: -50px
+  margin-top: -20px
+  text-align: center
+
+  .fa
+    display: inline-block
+    font: normal normal normal 14px/1 FontAwesome
+    font-size: inherit
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    transform: translate(0, 0)
+    color: #4ea42f
+    font-size: 18px !important
+    position: absolute
+    transform: scaleX(0) !important
