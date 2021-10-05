@@ -184,16 +184,19 @@ a.link
 
 	&--dropdown
 		position: relative
-		padding-right: 20px
 		cursor: pointer
-		&::after
-			content: ""
-			position: absolute
-			bottom: 0
-			right: 0
-			border: 5px solid transparent
-			border-top: 6px solid #000
-			transition: .3s
+		.status__select span,
+		.tags__select
+			position: relative
+			padding-right: 20px
+			&::after
+				content: ""
+				position: absolute
+				bottom: 2px
+				right: 0
+				border: 5px solid transparent
+				border-top: 6px solid $grey
+				transition: .3s
 
 ::-webkit-scrollbar
 	width: 8px
