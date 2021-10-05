@@ -49,12 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
     $("body").removeClass("locked");
   });
   //---------------------------------------------------------------------------
-  $(".btn--menu, .btn--dropmenu, .btn--dropdown").on("click", function () {
+  $("button[rel='dropdown'], button[rel='dropmenu'], div[rel='dropdown']").on("click", function () {
     var dropmenu__name = $('.' + $(this).attr("rel"));
-    $(this).closest('li, .tags, .status, .comments').find('.dropmenu, .dropdown').addClass("open");
-    
-    var pos = $(this).offset()
-    $(this).closest('li, .comments').find('.dropmenu, .dropdown').offset(pos);
+    $(this).closest('li, .tags, .status').find('.dropmenu, .dropdown').addClass("open");
+
+    var pos = $(this).offset();
+    $(this).closest('.comments').find('.dropdown').addClass("open");
   });
 
   $(".btn--label").on("click", function () {
@@ -70,12 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-
-
-  $(document).ready(function() {
-    
-  });
   
 });
 
