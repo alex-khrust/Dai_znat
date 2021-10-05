@@ -143,11 +143,15 @@ a.link
 			height: 13px
 			position: absolute
 			top: 50%
-			left: 4px
-			transform: translateY(-50%)
+			left: 50%
+			transform: translate(-50%, -50%)
 			background: #fff
 			mask: url("data:image/svg+xml,%3Csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.09992 5.59642C5.39488 3.76182 8.25885 2.55233 9.69185 1.96797C13.7834 0.299503 14.6335 0.00967244 15.1877 0.000102042C15.3095 -0.00200286 15.5821 0.0276103 15.7586 0.168038C15.9076 0.286613 15.9486 0.44679 15.9683 0.559212C15.9879 0.671633 16.0123 0.927733 15.9929 1.12784C15.7712 3.41185 14.8118 8.95454 14.3237 11.5127C14.1172 12.5951 13.7105 12.958 13.3169 12.9936C12.4613 13.0707 11.8116 12.4392 10.9829 11.9067C9.68624 11.0733 8.9537 10.5545 7.69503 9.74133C6.24043 8.80154 7.18338 8.28502 8.01236 7.44087C8.22931 7.21995 11.999 3.8583 12.0719 3.55334C12.0811 3.5152 12.0895 3.37304 12.0034 3.29797C11.9172 3.2229 11.7901 3.24857 11.6983 3.26899C11.5683 3.29792 9.4968 4.64029 5.48389 7.29607C4.89591 7.69192 4.36333 7.88479 3.88616 7.87468C3.36012 7.86354 2.34822 7.58307 1.59598 7.34334C0.673328 7.04929 -0.0599784 6.89383 0.00387615 6.39445C0.0371355 6.13434 0.402482 5.86833 1.09992 5.59642Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat
 			mask-size: 100%
+		&:hover
+			background: #fff !important
+			&::after
+				background: $green
 
 	&--upload-img
 		width: 20px
@@ -235,17 +239,17 @@ a.link
 		&:after
 			content: ""
 			position: absolute
-			left: 0
+			left: 50%
 			height: inherit
 			width: 110%
 			background: #444
 			border-radius: 2px
 		&:before
 			top: 0
-			transform: rotate(45deg)
+			transform: translateX(-50%) rotate(45deg)
 		&:after
 			top: 0
-			transform: rotate(-45deg)
+			transform: translateX(-50%) rotate(-45deg)
 
 .dropdown
 	width: auto
