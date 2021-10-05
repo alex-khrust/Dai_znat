@@ -111,13 +111,32 @@
         display: grid
         justify-self: start
         justify-content: start
+        align-items: end
+        grid-template: 'photo text' 'span info'
         gap: 8px
+        .user-photo
+          width: 45px
+          height: 45px
+          background: $grey
+          border-radius: 50%
+          overflow: hidden
+          display: flex
+          align-items: center
+          flex-shrink: 0
+          grid-area: photo
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
         p
           padding: 13px 15px
           color: #fff
           background: $darkblue
           border-radius: 9px 9px 9px 0px
           margin: 0
+          grid-area: text
+        .messages__info
+          grid-area: info
 
     &__info
       width: auto
