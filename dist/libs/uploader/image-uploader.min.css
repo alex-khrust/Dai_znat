@@ -1,0 +1,120 @@
+/*! Image Uploader - v1.0.0 - 15/07/2019
+ * Copyright (c) 2019 Christian Bayer; Licensed MIT https://www.codehim.com/demo/jquery-image-uploader-preview-and-delete/#options */
+ .image-uploader {
+  height: auto;
+  /* border: 1px solid #d9d9d9; */
+  position: relative
+}
+
+/* .image-uploader.drag-over {
+  background-color: #f3f3f3
+} */
+
+/* .image-uploader input[type="file"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0
+} */
+
+.image-uploader input[type="file"] {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  right: 0;
+  top: -175px;
+  cursor: pointer;
+}
+
+/* .image-uploader .upload-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+} */
+
+.image-uploader .upload-text i {
+  /* display: block; */
+  display: none;
+  /* font-size: 3rem;
+  margin-bottom: .5rem */
+}
+
+.image-uploader .upload-text span {
+  display: none
+}
+
+.image-uploader.has-files .upload-text {
+  display: none
+}
+
+.uploaded {
+  width: 100%;
+  max-width: 378px;
+  /* padding: .5rem; */
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: start;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(auto-fill, clamp(50px, 16vw, 77px)); */
+  gap: 22px;
+  line-height: 0;
+  transition: .3s
+}
+
+.uploaded .uploaded-image {
+  display: inline-block;
+  width: clamp(50px, 16vw, 77px);
+  height: clamp(50px, 16vw, 77px);
+  /* padding-bottom: 77px; */
+  /* width: calc(16.6666667% - 1rem);
+  padding-bottom: calc(16.6666667% - 1rem); */
+  /* height: 0; */
+  position: relative;
+  /* margin: .5rem; */
+  background: #f3f3f3;
+  cursor: default;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.uploaded .uploaded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute
+}
+
+.uploaded .uploaded-image .delete-image {
+  /* display: none; */
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 26px;
+  padding: 10px;
+  background-color: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='26' viewBox='0 0 25 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.8037 5.1542C10.3847 5.1542 10.0451 5.49383 10.0451 5.91278H14.5966C14.5966 5.49383 14.257 5.1542 13.838 5.1542H10.8037ZM16.1138 5.91278C16.1138 4.65592 15.0949 3.63702 13.838 3.63702H10.8037C9.54681 3.63702 8.52792 4.65592 8.52792 5.91278H5.49357C5.07462 5.91278 4.73499 6.25241 4.73499 6.67137C4.73499 7.09032 5.07462 7.42995 5.49357 7.42995H19.1481C19.5671 7.42995 19.9067 7.09032 19.9067 6.67137C19.9067 6.25241 19.5671 5.91278 19.1481 5.91278H16.1138Z' fill='%234EA42F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3759 11.2244C10.794 11.1976 11.1546 11.5148 11.1814 11.9329L11.5607 17.8499C11.5875 18.268 11.2703 18.6287 10.8522 18.6555C10.4341 18.6823 10.0734 18.3651 10.0466 17.947L9.66735 12.03C9.64055 11.6119 9.95776 11.2512 10.3759 11.2244Z' fill='%234EA42F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.2658 11.2244C13.8477 11.1976 13.4871 11.5148 13.4603 11.9329L13.081 17.8499C13.0542 18.268 13.3714 18.6287 13.7895 18.6555C14.2076 18.6823 14.5682 18.3651 14.595 17.947L14.9743 12.03C15.0011 11.6119 14.6839 11.2512 14.2658 11.2244Z' fill='%234EA42F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.55272 9.46756C5.46783 8.78841 5.99738 8.18854 6.68181 8.18854H17.9599C18.6443 8.18854 19.1739 8.78841 19.089 9.46756L17.7912 19.8496C17.6489 20.9885 16.6807 21.8431 15.533 21.8431H9.10866C7.96094 21.8431 6.99283 20.9885 6.85048 19.8496L5.55272 9.46756ZM7.11147 9.70571L8.35593 19.6614C8.40339 20.041 8.72609 20.3259 9.10866 20.3259H15.533C15.9156 20.3259 16.2383 20.041 16.2858 19.6614L17.5302 9.70571H7.11147Z' fill='%234EA42F'/%3E%3C/svg%3E%0A");
+  background-repeat: none;
+  -webkit-appearance: none;
+  border: none;
+}
+
+.uploaded .uploaded-image:hover .delete-image {
+  display: block
+}
+
+.uploaded .uploaded-image .delete-image i {
+  display: none;
+  color: #fff;
+  font-size: 1.4rem
+}
