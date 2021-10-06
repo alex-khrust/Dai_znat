@@ -16,11 +16,11 @@
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	/* left: 50%;
+	left: 50%;
 	top: 50%;
 	margin-left: -50px;
 	margin-top: -20px;
-	text-align: center; */
+	text-align: center;
 }
 
 
@@ -29,12 +29,12 @@
 	width: 30px;
 	height: 30px;
 	margin-top: 5px;
-	border-radius: 15px;
+	border-radius: 15px !important;
 	padding: 0;
 	border: 3px solid #FFFFFF;
 	border-bottom: 3px solid rgba(255,255,255,0.0);
 	border-left: 3px solid rgba(255,255,255,0.0);
-	background-color: transparent !important;
+	/* background-color: transparent !important; */
 	animation-name: rotateAnimation;
 	-webkit-animation-name: wk-rotateAnimation;
 	animation-duration: 1s;
@@ -43,8 +43,8 @@
 	-webkit-animation-delay: 0.2s;
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
-	--webkit-mask: none;
-	mask:none;
+	/* --webkit-mask: none;
+	mask:none; */
 }
 
 @keyframes rotateAnimation {
@@ -68,17 +68,17 @@
 }
 
 .fa {
-	/* position: absolute;
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -9px;
-	margin-top: -9px; */
-	/* -webkit-transform: scaleX(0) !important;
-	transform: scaleX(0) !important; */
+	margin-top: -9px;
+	-webkit-transform: scaleX(0) !important;
+	transform: scaleX(0) !important;
 	width: 38px;
 	height: 38px;
-	/* left: 3876px;
-	top: 185px; */
+	left: 3876px;
+	top: 185px;
 	border-radius: 2px;
 	transition: all 0.3s ease;
 	background: #fff;
