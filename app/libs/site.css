@@ -31,7 +31,7 @@
 	margin-top: 5px;
 	border-radius: 15px !important;
 	padding: 0;
-	background-color: #4EA42F !important;
+	background: #4EA42F !important;
 	animation-name: rotateAnimation;
 	-webkit-animation-name: wk-rotateAnimation;
 	animation-duration: 1s;
