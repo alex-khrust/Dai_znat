@@ -49,11 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
     $("body").removeClass("locked");
   });
   //---------------------------------------------------------------------------
-  $("button[rel='dropdown'], button[rel='dropmenu'], div[rel='dropdown']").on("click", function () {
-    var dropmenu__name = $('.' + $(this).attr("rel"));
+  $("button[rel='dropdown'], button[rel='dropmenu'], div[rel='dropdown'], .btn--menu").on("click", function () {
     $(this).closest('li, .tags, .status').find('.dropmenu, .dropdown').addClass("open");
 
-    var pos = $(this).offset();
     $(this).closest('.comments').find('.dropdown').addClass("open");
   });
 
