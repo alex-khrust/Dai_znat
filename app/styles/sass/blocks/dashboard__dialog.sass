@@ -85,19 +85,9 @@
         justify-self: end
         justify-content: end
         gap: 8px
-        img
-          width: auto
-          height: 100%
-          max-width: 250px
-          max-height: 133px
-          border-radius: 5px
-          object-fit: cover
         p
-          padding: 13px 15px
-          color: #fff
           background: $green
           border-radius: 9px 9px 0px 9px
-          margin: 0
       &--companion
         display: grid
         justify-self: start
@@ -120,14 +110,28 @@
             height: 100%
             object-fit: cover
         p
-          padding: 13px 15px
-          color: #fff
           background: $darkblue
           border-radius: 9px 9px 9px 0px
-          margin: 0
           grid-area: text
         .messages__info
           grid-area: info
+
+      &--user,
+      &--companion
+        img
+          width: auto
+          height: 100%
+          max-width: 250px
+          max-height: 133px
+          border-radius: 5px
+          object-fit: cover
+          @media (min-width: 1600px)
+            max-height: 145px
+
+        p
+          padding: 13px 15px
+          color: #fff
+          margin: 0
 
     &__info
       width: auto
