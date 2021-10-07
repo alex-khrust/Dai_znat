@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+
   // SELECT ----------------------------------------------------------------
   $('select').each(function(index){
   

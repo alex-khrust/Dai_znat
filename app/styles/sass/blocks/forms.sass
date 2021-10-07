@@ -1,0 +1,206 @@
+.form__section__company
+	width: 100%
+	height: auto
+	display: grid
+	gap: 25px
+	@media (min-width: 1000px)
+		grid-auto-flow: row dense
+		grid-template-columns: repeat(3, 1fr)
+		align-content: space-between
+		
+	.input__label,
+	.select__label
+		width: auto
+		display: grid
+		align-content: end
+		gap: 8px
+		position: relative
+		cursor: auto
+		input,
+		.wrap-select
+			.custom-select
+				padding-right: 55px
+				&::before,
+				&::after
+					right: 32px
+			&+.btn--edit
+				width: 32px
+				height: 48px
+				position: absolute
+				bottom: 0
+				right: 0
+				z-index: 1
+
+	.input__title,
+	.select__title
+		line-height: 1
+		font-size: 14px
+		font-weight: 500
+
+	button[type="submit"]
+		height: 100%
+		max-height: 48px
+		font-size: 16px
+		font-weight: 700
+		align-self: end
+
+
+.select__label
+	.btn--edit
+		z-index: 11 !important
+
+
+input
+	width: 100%
+	height: 48px
+	padding: 13px 16px
+	display: flex
+	flex-direction: row
+	align-items: center
+	background: #fff
+	border: 1px solid rgba(17, 17, 19, 0.2)
+	border-radius: 4px
+	padding: 10px 16px
+	font-size: 16px
+	line-height: 1.4
+	transition: .2s
+	// &::placeholder
+	// 	color: $grey
+	&:focus
+		filter: drop-shadow(0 0 2px rgba(17, 17, 19, 0.2))
+	&:valid
+		color: $grey
+	&:invalid
+		color: rgba(234, 67, 53, 1)
+		border-color: rgba(234, 67, 53, 1)
+	&:disabled
+		background: rgba(0, 0, 0, 0.02)
+
+.wrap-select 
+	&:focus-within
+		filter: drop-shadow(0 0 2px rgba(17, 17, 19, 0.2))
+
+
+label.chbx__label
+	cursor: pointer
+	display: flex
+	align-items: center
+	line-height: 1
+	gap: 8px
+input[type="checkbox"]
+	display: none
+	&+.chbx
+		width: 21px
+		height: 21px
+		display: block
+		object-fit: cover
+		transition: .2s
+		background: #fff
+		border: 2px solid $grey
+		border-radius: 2px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 45%
+			left: 25%
+			width: 5px
+			height: 9px
+			transform: rotate(45deg) translate(-50%, -50%)
+			border-right: 2px solid #fff
+			border-bottom: 2px solid #fff
+			z-index: 2
+	&:checked
+		&+.chbx
+			background: $green
+			border-color: $green
+			&+.tags__color + .tags__title + .tags__name
+				color: $green
+	&:disabled
+		&+.chbx
+			background: rgba(0, 0, 0, 0.02)
+			border-color: rgba(0, 0, 0, 0.1)
+			&+.tags__color + .tags__title + .tags__name,
+			&+.chbx__title
+				color: $grey
+
+
+
+/*** CUSTOM SELECT STYLES ***/
+// Vars
+$main-col: $grey
+
+.wrap-select
+	width: 100%
+	position: relative
+	cursor: pointer
+	display: inline-block
+	margin-right: 1rem
+	text-align: left
+	z-index: 5
+	&:last-of-type
+		margin-right: 0
+
+select
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+
+.custom-select
+	width: 100%
+	height: 48px
+	padding: 13px 16px
+	display: flex
+	flex-direction: row
+	align-items: center
+	background: #fff
+	border: 1px solid rgba(17, 17, 19, 0.2)
+	border-radius: 4px
+	position: relative
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		bottom: 50% 
+		right: 0.5rem
+		border: 7px solid transparent
+		transition: .3s
+		margin-bottom: -11px
+		border-top-color: $main-col
+		transform: rotate(0deg)
+
+	&.active
+		&::before
+			margin-bottom: -3px
+			transform: rotate(180deg)
+
+.custom-select-items
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	z-index: 2
+	width: 100%
+	margin: 0
+	padding: 0
+	background: #fff
+	color: #000
+	border: 1px solid rgba(17, 17, 19, 0.2)
+	border-top: 1px solid transparent
+	border-radius: 0 0 4px 4px 
+	li
+		list-style: none
+		margin: 0
+		padding: 0.5rem 1rem
+		transition: .2s
+		&:hover, 
+		&.active
+			background: lighten($main-col, 25%)
+			// color: #fff
+
+//RESPONSIVE DEMO
+@media (max-width: 650px)
+	.wrap-select
+		width: 100%
+		margin: 0 0 2rem
