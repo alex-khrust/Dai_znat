@@ -276,7 +276,7 @@ a.link
 	&::after
 		content: ''
 		position: absolute
-		right: 20px 
+		right: 20px
 		top: -20px
 		border: 10px solid transparent
 		border-bottom: 10px solid #fff
@@ -284,3 +284,16 @@ a.link
 		opacity: 1 !important
 		visibility: visible !important
 		transform: scale(1) !important
+
+
+header
+	&+main
+		&>.container
+			width: 100%
+			height: auto
+			max-width: 1040px
+			padding-top: 30px
+			padding-bottom: 30px
+			display: grid
+			align-items: center
+			align-content: center

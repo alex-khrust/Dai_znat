@@ -1,15 +1,94 @@
 .header-sidebar__dashboard
   &+main
-    &>.container
-      width: 100%
-      height: auto
-      max-width: 1040px
-      padding-top: 30px
-      padding-bottom: 30px
-      display: grid
-      align-items: center
-      align-content: center
     @media (min-width: 768px)
       padding-left: 205px !important
     @media (min-width: 1600px)
       padding-left: 255px !important
+    &>.container
+
+
+
+
+
+/*** CUSTOM SELECT STYLES ***/
+// Vars
+$main-col: purple
+
+.wrap-select
+  position: relative
+  width: 300px
+  cursor: pointer
+  display: inline-block
+  margin-right: 1rem
+  text-align: left
+  &:last-of-type
+    margin-right: 0
+
+select
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+
+.custom-select
+  width: 100%
+  height: 48px
+  padding: 13px 16px
+  display: flex
+  flex-direction: row
+  align-items: center
+  background: #fff
+  border: 1px solid rgba(17, 17, 19, 0.2)
+  border-radius: 4px
+  padding: 0 1rem
+  position: relative
+  overflow: hidden
+  z-index: 1
+  &::before, &::after
+    content: ''
+    position: absolute
+    top: 50% 
+    right: 0.5rem
+    border: 7px solid transparent
+    transition: transform 0.4s
+
+  &::after
+    margin-top: -3px
+    border-top-color: $main-col
+
+  &::before
+    margin-top: -11px
+    border-bottom-color: $main-col
+    transform: translateY(50px)
+
+  &.active
+    &::after
+      transform: translateY(-50px)
+
+    &::before
+      transform: translateY(0)
+
+.custom-select-items
+  display: none
+  position: absolute
+  top: 100%
+  left: 0
+  z-index: 2
+  width: 100%
+  margin: 0
+  padding: 0
+  background: lighten($main-col, 50%)
+  color: $main-col
+  li
+    list-style: none
+    margin: 0
+    padding: 0.5rem 1rem
+  &:hover, &.active
+    background: #444
+    color: #fff
+
+//RESPONSIVE DEMO
+@media (max-width: 650px)
+  .wrap-select
+    width: 100%
+    margin: 0 0 2rem
