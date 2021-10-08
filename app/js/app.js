@@ -70,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+  $('.select').on('click', function(){
+    $(this).addClass('active');
+  });
 
   // SELECT ----------------------------------------------------------------
   $('select').each(function(index){
@@ -125,7 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
    // End select each loop 
    });
-
   
    // =======================================================================
 });

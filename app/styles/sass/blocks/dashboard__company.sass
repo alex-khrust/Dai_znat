@@ -24,10 +24,10 @@
         flex-flow: row
 
     &__header
-      display: grid
-      grid-auto-flow: column
-      align-items: end
-      justify-content: start
+      display: flex
+      flex-flow: wrap
+      align-items: flex-end
+      justify-content: flex-start
       line-height: 1
       padding: 0
       margin-bottom: 30px
@@ -50,3 +50,56 @@
     grid-template-columns: repeat(2, 1fr)
     justify-content: start
     gap: 15px 35px
+
+.form__section__company
+  width: 100%
+  height: auto
+  display: grid
+  gap: 25px
+  @media (min-width: 1000px)
+    grid-auto-flow: row dense
+    grid-template-columns: repeat(3, 1fr)
+    align-content: space-between
+
+  .input__label,
+  .select__label
+    width: auto
+    display: grid
+    align-content: end
+    gap: 8px
+    position: relative
+    cursor: auto
+    input,
+    .wrap-select
+      .custom-select
+        padding-right: 55px
+        &::before,
+        &::after
+          right: 32px
+      &+.btn--edit
+        width: 32px
+        height: 48px
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 1
+
+  .input__title,
+  .select__title
+    line-height: 1
+    font-size: 14px
+    font-weight: 500
+
+  button[type="submit"]
+    height: 100%
+    max-height: 48px
+    font-size: 16px
+    font-weight: 700
+    align-self: end
+
+
+.select
+  &.active
+    display: block
+    .custom-select-items
+      display: block
