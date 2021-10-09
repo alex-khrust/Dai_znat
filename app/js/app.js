@@ -70,8 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  $('.select').on('click', function(){
-    $(this).addClass('active');
+  $('.select>.custom-select').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).closest('.select').find('.custom-select-items').slideToggle();
   });
 
   // SELECT ----------------------------------------------------------------
