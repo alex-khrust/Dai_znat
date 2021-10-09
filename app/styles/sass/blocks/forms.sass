@@ -1,4 +1,4 @@
-.form__section__company
+.form__company
 	width: 100%
 	height: auto
 	display: grid
@@ -30,6 +30,8 @@
 				bottom: 0
 				right: 0
 				z-index: 1
+		input
+			padding: 10px 35px 10px 16px
 
 	.input__title,
 	.select__title
@@ -93,11 +95,11 @@
 	align-items: start
 	align-content: start
 	position: relative
-	@media (min-width: 600px) and (max-width: 768px)
+	@media (min-width: 560px) and (max-width: 768px)
 		grid-auto-flow: row dense
 		grid-template-columns: repeat(2, 1fr)
 		align-content: space-between
-	@media (min-width: 900px) and (max-width: 1080px)
+	@media (min-width: 810px) and (max-width: 1080px)
 		grid-auto-flow: row dense
 		grid-template-columns: repeat(2, 1fr)
 		align-content: space-between
@@ -125,7 +127,7 @@ input
 	&:focus
 		filter: drop-shadow(0 0 2px rgba(17, 17, 19, 0.2))
 	// &:valid
-	// 	color: $grey
+	// 	border-color: $green
 	&:invalid
 		color: rgba(234, 67, 53, 1)
 		border-color: rgba(234, 67, 53, 1)
