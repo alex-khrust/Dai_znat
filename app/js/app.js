@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //---------------------------------------------------------------------------
   // $(':radio:not(:checked)').attr('disabled', true);
   //---------------------------------------------------------------------------
-  $(".overlay, .btn--close").on("click", function () {
+  $(".btn--popup").on("click", function () {
     var popup__name = $('.' + $(this).attr("rel"));
     $(popup__name).addClass("open");
     $("body").addClass("locked");
@@ -70,12 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  
+  // SELECT ----------------------------------------------------------------
+
   $('.select>.custom-select').on('click', function(){
     $(this).toggleClass('active');
     $(this).closest('.select').find('.custom-select-items').slideToggle();
   });
-
-  // SELECT ----------------------------------------------------------------
+  
   $('select').each(function(index){
   
     var sel = $(this);
