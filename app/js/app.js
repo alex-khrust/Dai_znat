@@ -130,8 +130,38 @@ document.addEventListener('DOMContentLoaded', () => {
     
    // End select each loop 
    });
-  
-   // =======================================================================
+   
+  //-----------------------------------------------------------------------
+  $(function() {
+
+    var $el, leftPos, newWidth,
+        $pagination = $(".pagination");
+    
+    $pagination.append("<li class='bar'></li>");
+    var $magicLine = $(".bar");
+    
+    $magicLine
+        .width($(".pagination .active").width())
+        .css("left", $(".active a").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+        
+    $(".pagination li a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });    
+    });
+  });
+  // =======================================================================
 });
 
 

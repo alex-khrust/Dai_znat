@@ -52,7 +52,7 @@
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3501 7.78547C15.3501 11.7967 12.0983 15.0485 8.0871 15.0485C4.07586 15.0485 0.824097 11.7967 0.824097 7.78547C0.824097 3.77422 4.07586 0.522461 8.0871 0.522461C12.0983 0.522461 15.3501 3.77422 15.3501 7.78547ZM14.1396 7.78547C14.1396 11.1282 11.4298 13.838 8.0871 13.838C4.7444 13.838 2.0346 11.1282 2.0346 7.78547C2.0346 4.44276 4.7444 1.73296 8.0871 1.73296C11.4298 1.73296 14.1396 4.44276 14.1396 7.78547Z" fill="#A4A6B3"/>
 							</svg>
 							Контакты</a></li>
-						<li class="menu__item"><a href="dashboard__dialog.html" class="menu__link"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<li class="menu__item"><a href="dashboard__dialog.html" class="menu__link active"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M3.78622 5.80862C4.25181 5.80862 4.62925 5.43119 4.62925 4.9656C4.62925 4.5 4.25181 4.12257 3.78622 4.12257C3.32063 4.12257 2.94319 4.5 2.94319 4.9656C2.94319 5.43119 3.32063 5.80862 3.78622 5.80862Z" fill="#A4A6B3"/>
 							<path d="M7.22317 4.9656C7.22317 5.43119 6.84573 5.80862 6.38014 5.80862C5.91455 5.80862 5.53712 5.43119 5.53712 4.9656C5.53712 4.5 5.91455 4.12257 6.38014 4.12257C6.84573 4.12257 7.22317 4.5 7.22317 4.9656Z" fill="#A4A6B3"/>
 							<path d="M8.97407 5.80862C9.43966 5.80862 9.8171 5.43119 9.8171 4.9656C9.8171 4.5 9.43966 4.12257 8.97407 4.12257C8.50848 4.12257 8.13104 4.5 8.13104 4.9656C8.13104 5.43119 8.50848 5.80862 8.97407 5.80862Z" fill="#A4A6B3"/>
@@ -457,6 +457,127 @@
     </div>
   </div>
   <!-- /.popup__tags -->
+
+  <div class="popup popup__company-add">
+    <div class="overlay"></div>
+    <div class="popup__box">
+      <button class="btn--close">
+        <span class="line"></span>
+      </button>
+      <div class="popup__header">
+        <h3 class="title">добавление заведения</h3>
+      </div>
+
+      <form class="company-add__form" id="" action="" method="POST">
+        
+        <label class="input__label">
+          <span class="input__title">Название</span>
+          <input type="text" name="" id="" placeholder="Данные">
+          <button class="btn--edit"></button>
+        </label>
+
+        <label class="input__label">
+          <span class="input__title">Описание</span>
+          <input type="text" name="" id="" placeholder="Данные">
+          <button class="btn--edit"></button>
+        </label>
+
+        <div class="input__desc">
+          <div class="img__wrap">
+            <!-- <img src="" alt=""> -->
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+        <button class="btn" type="submit">Добавить заведение <span>+</span></button>
+
+      </form>
+    </div>
+  </div>
+  <!-- /.popup__company-add -->
+
+  <div class="popup popup__contact-add">
+    <div class="overlay"></div>
+    <div class="popup__box">
+      <button class="btn--close">
+        <span class="line"></span>
+      </button>
+      <div class="popup__header">
+        <h3 class="title">добавление контакта</h3>
+      </div>
+
+      <form class="contact-add__form" id="" action="" method="POST">
+        
+        <div class="form__col">
+          
+          <label class="input__label">
+            <span class="input__title">Введите имя</span>
+            <input type="text" name="" id="" placeholder="Данные">
+            <button class="btn--edit"></button>
+          </label>
+  
+          <label class="select__label">
+            <span class="select__title">Тип связи</span>
+            <select name="mySelect" id="mySelect">
+              <option value="default">Telegram</option>
+              <option value="viber">Viber</option>
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">Whatsapp</option>
+            </select>
+            <button class="btn--edit"></button>
+          </label>
+          
+        </div>
+
+        <div class="form__col">
+
+          <div class="select__label">
+            <span class="select__title">Должность</span>
+            <div class="wrap-select select">
+              <div class="custom-select">Специальность</div>
+              <ul class="custom-select-items open">
+                <li>
+                  <label class="radio__label">
+                    <input type="radio" name="test" id="" checked>
+                    <span class="radio"></span>
+                    <span class="radio__title">Повар</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio__label">
+                    <input type="radio" name="test" id="" disabled>
+                    <span class="radio"></span>
+                    <span class="radio__title">Официант</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio__label">
+                    <input type="radio" name="test" id="">
+                    <span class="radio"></span>
+                    <span class="radio__title">Администратор</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            
+            <button class="btn--edit"></button>
+          </div>
+
+          <div class="input__desc">
+            <div class="img__wrap">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+
+        </div>
+        
+        <button class="btn" type="submit">Добавить заведение <span>+</span></button>
+
+      </form>
+    </div>
+  </div>
+  <!-- /.popup__company-add -->
 
 
   <!-- <script src="libs/vue.min.js"></script> -->

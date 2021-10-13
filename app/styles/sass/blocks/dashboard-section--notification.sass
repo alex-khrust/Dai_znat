@@ -1,0 +1,85 @@
+.dashboard-section--notification
+  text-align: center
+  .dashboard-section__header
+    .btn--green
+      width: auto
+      height: 44px
+      padding: 5px 20px
+      font-size: 14px
+      font-weight: 700
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 12px
+      margin-left: auto
+      span
+        font-size: 27px
+        font-weight: 100
+  .title__wrap
+    display: flex
+    align-items: baseline
+    gap: 15px
+    span
+      font-size: 27px
+      font-weight: 700
+      color: $green
+  .dashboard__inner
+    padding: 25px 25px 110px
+    display: grid
+    justify-items: center
+    align-items: center
+    gap: 10px
+    .picture
+      // width: auto
+      // height: 100%
+      // max-height: 235px
+      width: 100%
+      height: auto
+      max-width: 335px
+      max-height: 230px
+      object-fit: contain
+    .title
+      font-size: clamp(28px, 4vw, 42px)
+      line-height: 1.2
+      margin: 0
+      position: relative
+      z-index: 1
+      padding-left: 23px
+      margin: 0
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 46px
+        height: 46px
+        background: $green
+        z-index: -1
+    .description
+      width: 100%
+      max-width: 400px
+      font-size: clamp(18px, 3vw, 22px)
+      line-height: 1.2
+      font-weight: 600
+      margin: 0
+
+  .links__list
+    list-style: none
+    padding: 0
+    display: flex
+    align-items: baseline
+    gap: 40px
+    margin-left: auto
+  .links__item
+  .link--grey
+
+.dashboard__no-notification,
+.dashboard__appeal,
+.dialog__basket,
+.dialog__archive
+  .picture
+    margin-bottom: 30px
+
+.dashboard__appeal
+  .dashboard-section__header
+    align-items: baseline
