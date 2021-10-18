@@ -47,6 +47,17 @@
       color: $grey
       &:hover
         color: $green
+    .btn--green
+      width: auto
+      height: 44px
+      padding: 5px 20px
+      font-size: 14px
+      font-weight: 700
+      gap: 12px
+      margin-left: auto
+      span
+        font-size: 27px
+        font-weight: 100
 
   @media ( min-width: 1300px)
     &:nth-child(2)
@@ -128,12 +139,15 @@
         margin-top: 8px
 
     .company,
-    .status
+    .status,
+    .position,
+    .connection
       display: grid
       align-items: center
       justify-content: center
       text-align: center
       white-space: nowrap
+      gap: 5px
       &__title
         font-weight: bold
         font-size: 10px
@@ -174,6 +188,11 @@
         background: #fff
         color: $green
 
+    .btn--white
+      height: 100%
+      max-height: 44px
+      padding: 10px 20px
+
     .btn--menu
       width: 20px
 
@@ -187,6 +206,12 @@
       font-size: 14px
       line-height: 16px
       letter-spacing: 0.2px
+
+    .phone
+      .number
+        font-size: 15px
+        font-weight: 500
+        white-space: nowrap
 
 
 .dashboard__item__menu
