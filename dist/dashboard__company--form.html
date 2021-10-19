@@ -100,152 +100,177 @@
 		</div>
 	</header>
 
-  <main class="dashboard__company">
+  <main class="dashboard__company--form">
     <div class="container">
-      <section class="dashboard-section dashboard-section company">
+      <section class="dashboard-section company--form">
         <div class="dashboard-section__header">
-          <h2 class="title">мои заведения</h2>
-
-          <button class="btn--green">Добавить новое<span>+</span></button>
+          <h2 class="title">мои заведения:</h2>
+          <span class="name">Фламинго</span>
         </div>
 
         <div class="dashboard__inner">
-          <ul class="dashboard-section__list">
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
+          <form action="" class="form__company">
+
+            <div class="form__col">
+
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные">
+                <button class="btn--edit"></button>
+              </label>
+
+              <label class="select__label">
+                <span class="select__title">Данные</span>
+                <select name="mySelect" id="mySelect">
+                  <option value="default">Select a language</option>
+                  <option value="html">HTML</option>
+                  <option value="javascript">Javascript</option>
+                  <option value="php">PHP</option>
+                </select>
+                <button class="btn--edit"></button>
+              </label>
+
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные" required>
+                <button class="btn--edit"></button>
+              </label>
+
+              <div class="chbx__box">
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="">
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="">
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="">
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="">
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="">
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="">
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="" checked>
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
+                <label class="chbx__label">
+                  <input type="checkbox" name="" id="" disabled>
+                  <span class="chbx"></span>
+                  <span class="chbx__title">Чек-бокс</span>
+                </label>
               </div>
 
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
+              <div class="input__desc">
+                <div class="img__wrap">
+                  <!-- <img src="" alt=""> -->
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
               </div>
 
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
+            </div>
+
+            <div class="form__col">
+
+              <div class="select__label">
+                <span class="select__title">Данные</span>
+                <div class="wrap-select select">
+                  <div class="custom-select">Радио кнопки</div>
+                  <ul class="custom-select-items">
+                    <li>
+                      <label class="radio__label">
+                        <input type="radio" name="test" id="" checked>
+                        <span class="radio"></span>
+                        <span class="radio__title">пункт</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio__label">
+                        <input type="radio" name="test" id="" disabled>
+                        <span class="radio"></span>
+                        <span class="radio__title">пункт</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio__label">
+                        <input type="radio" name="test" id="">
+                        <span class="radio"></span>
+                        <span class="radio__title">пункт</span>
+                      </label>
+                    </li>
+                  </ul>
                 </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
+                
+                <button class="btn--edit"></button>
               </div>
 
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
-              </div>
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные">
+                <button class="btn--edit"></button>
+              </label>
 
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
-              </div>
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные" disabled>
+                <button class="btn--edit"></button>
+              </label>
+
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные">
+                <button class="btn--edit"></button>
+              </label>
+
+            </div>
+
+            <div class="form__col">
+
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные">
+                <button class="btn--edit"></button>
+              </label>
+
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные">
+                <button class="btn--edit"></button>
+              </label>
               
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
-              </div>
+              <label class="input__label">
+                <span class="input__title">Данные</span>
+                <input type="text" name="" id="" placeholder="Данные" required>
+                <button class="btn--edit"></button>
+              </label>
+  
+              <button class="btn--green btn--popup" type="submit" rel="popup__company-add">Сохранить</button>
 
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
+            </div>
 
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
-              </div>
-
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
-              </div>
-
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
-            </li>
-            <li>
-              <div class="company-item">
-                <div class="company-item__photo">
-                  <!-- <img src="images/dist/client-1.jpg" alt="Фото клиента"> -->
-                </div>
-                <span class="company-item__name">Фламинго</span>
-                <div class="data">на сервисе
-                  <time datetime="2021-12-12T23:00">23:00 12.12.2021</time>
-                </div>
-              </div>
-              
-              <div class="btns">
-                <a href="" class="btn--white">редактировать</a>
-                <button class="btn--delete"></button>
-              </div>
-            </li>
-          </ul>
+          </form>
         </div>
 
       </section>
-      <!-- /.dashboard__company -->
+      <!-- /.dashboard__company--form -->
     </div>
   </main>
 
