@@ -58,6 +58,14 @@
       span
         font-size: 27px
         font-weight: 100
+        
+    .links__list
+      list-style: none
+      padding: 0
+      display: flex
+      align-items: baseline
+      gap: 40px
+      margin-left: auto
 
   @media ( min-width: 1300px)
     &:nth-child(2)
@@ -65,6 +73,15 @@
         &::before
           display: none
   
+  .title__wrap
+    display: flex
+    align-items: baseline
+    gap: 15px
+    span
+      font-size: 27px
+      font-weight: 700
+      color: $green
+      
   &__inner
     width: 100%
     overflow: auto
@@ -149,7 +166,7 @@
     .connection
       display: grid
       align-items: center
-      justify-content: center
+      justify-content: normal
       text-align: center
       white-space: nowrap
       gap: 5px
@@ -169,10 +186,13 @@
         font-weight: bold
         color: $darkblue
         display: flex
+        justify-content: space-between
         gap: 10px
 
     .status
+      min-width: 140px
       justify-items: start
+      justify-content: normal
 
     .btns
       gap: 5px
@@ -280,3 +300,11 @@
     mask: none
     &::before
       mask: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.75 1.75C5.40482 1.75 5.125 2.02982 5.125 2.375H8.875C8.875 2.02982 8.59518 1.75 8.25 1.75H5.75ZM10.125 2.375C10.125 1.33947 9.28553 0.5 8.25 0.5H5.75C4.71447 0.5 3.875 1.33947 3.875 2.375H1.375C1.02982 2.375 0.75 2.65482 0.75 3C0.75 3.34518 1.02982 3.625 1.375 3.625H12.625C12.9702 3.625 13.25 3.34518 13.25 3C13.25 2.65482 12.9702 2.375 12.625 2.375H10.125Z' fill='%23B0B0B0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.39752 6.75128C5.74199 6.7292 6.03914 6.99055 6.06122 7.33502L6.37372 12.21C6.3958 12.5545 6.13445 12.8516 5.78998 12.8737C5.44551 12.8958 5.14836 12.6345 5.12628 12.29L4.81378 7.41498C4.7917 7.07051 5.05305 6.77336 5.39752 6.75128Z' fill='%23B0B0B0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.60248 6.75128C8.25801 6.7292 7.96086 6.99055 7.93878 7.33502L7.62628 12.21C7.6042 12.5545 7.86555 12.8516 8.21002 12.8737C8.55449 12.8958 8.85164 12.6345 8.87372 12.29L9.18622 7.41498C9.2083 7.07051 8.94695 6.77336 8.60248 6.75128Z' fill='%23B0B0B0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.42373 5.30378C1.35379 4.74423 1.79009 4.25 2.35399 4.25H11.646C12.2099 4.25 12.6462 4.74423 12.5763 5.30378L11.507 13.8576C11.3898 14.7959 10.5921 15.5 9.64652 15.5H4.35348C3.40787 15.5 2.61024 14.7959 2.49296 13.8576L1.42373 5.30378ZM2.70799 5.5L3.7333 13.7025C3.7724 14.0153 4.03828 14.25 4.35348 14.25H9.64652C9.96172 14.25 10.2276 14.0153 10.2667 13.7025L11.292 5.5H2.70799Z' fill='%23B0B0B0'/%3E%3C/svg%3E%0A") no-repeat center
+
+
+.process
+.new,
+.done--bad
+  color: #EA4335
+.done--ok
+  color: $green
