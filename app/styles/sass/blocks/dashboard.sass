@@ -8,7 +8,8 @@
 .contacts,
 .company,
 .appeal,
-.dialogs
+.dialogs,
+.payments
   .dashboard-section__header
     padding-bottom: 35px
   &__basket,
@@ -17,7 +18,17 @@
       padding-bottom: 35px
 
 .contacts,
-.company
+.company,
+.payments
   .dashboard-section__list li
     &::before
       display: none
+
+.payments
+  .dashboard-section__list
+    li
+      .btns
+        .btn--green,
+        .btn--white
+          min-width: 155px
+          min-height: 41px
