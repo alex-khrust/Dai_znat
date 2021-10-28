@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<base href="https://alex-khrust.github.io/Dai_znat/app/">
 
-	<title>Дай знать | Oбращения</title>
+	<title>Дай знать | Контакты</title>
 	<meta name="description" content="Дай знать">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -100,30 +100,107 @@
 		</div>
 	</header>
 
-  <main class="dashboard__appeal-empty">
+  <main class="dashboard__tags">
     <div class="container">
-      <section class="dashboard-section dashboard-section--notification appeal-empty">
+      <section class="dashboard-section dashboard-section tags">
         <div class="dashboard-section__header">
-          <h2 class="title">обращения</h2>
-          <ul class="links__list">
-            <li class="links__item">
-              <a href="dashboard__dialog__archive-empty.html" class="link--grey">архив</a>
-            </li>
-            <li class="links__item">
-              <a href="dashboard__dialog__basket-empty.html" class="link--grey">корзина</a>
-            </li>
-          </ul>
+          <h2 class="title">метки</h2>
+
+          <button class="btn--green btn--popup" rel="popup__tags--add">Добавить метку<span>+</span></button>
         </div>
 
         <div class="dashboard__inner">
-          <img class="picture" src="images/dist/appeal.png" alt="Изображение списка уведомлений">
-          <h1 class="title">хорошая работа!</h1>
-          <p class="description">Новых обращений нет!</p>
-          <p class="description">А значит все супер!</p>
+
+          <ul class="tags__list">
+            <li class="tags__list__item">
+              <label class="">
+                <input type="checkbox" id="">
+                <span class="chbx"></span>
+                <span class="tags__color"></span>
+                <span class="tags__title">призначення</span>
+                <span class="tags__name">Чистота</span>
+                
+                <div class="btns">
+                  <button class="btn--edit"></button>
+                  <button class="btn--delete"></button>
+                </div>
+              </label>
+            </li>
+            <li class="tags__list__item">
+              <label class="">
+                <input type="checkbox" id="">
+                <span class="chbx"></span>
+                <span class="tags__color yellow"></span>
+                <span class="tags__title">призначення</span>
+                <span class="tags__name">Меню</span>
+
+                <div class="btns">
+                  <button class="btn--edit"></button>
+                  <button class="btn--delete"></button>
+                </div>
+              </label>
+            </li>
+            <li class="tags__list__item">
+              <label class="">
+                <input type="checkbox" id="">
+                <span class="chbx"></span>
+                <span class="tags__color blue"></span>
+                <span class="tags__title">призначення</span>
+                <span class="tags__name">Літня тераса</span>
+
+                <div class="btns">
+                  <button class="btn--edit"></button>
+                  <button class="btn--delete"></button>
+                </div>
+              </label>
+            </li>
+            <li class="tags__list__item">
+              <label class="">
+                <input type="checkbox" id="">
+                <span class="chbx"></span>
+                <span class="tags__color red"></span>
+                <span class="tags__title">призначення</span>
+                <div class="tags__name">Обслуговування</div>
+
+                <div class="btns">
+                  <button class="btn--edit"></button>
+                  <button class="btn--delete"></button>
+                </div>
+              </label>
+            </li>
+          </ul>
+
+          <ul class="pagination">
+            <li class="pagination__item active">
+              <a href="" class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">4</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">5</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">6</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">7</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">8</a>
+            </li>
+          </ul>
+
         </div>
 
       </section>
-      <!-- /.dashboard__appeal-empty -->
+      <!-- /.dashboard__tags -->
     </div>
   </main>
 

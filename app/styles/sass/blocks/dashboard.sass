@@ -9,7 +9,8 @@
 .company,
 .appeal,
 .dialogs,
-.payments
+.payments,
+.tags
   .dashboard-section__header
     padding-bottom: 35px
   &__basket,
@@ -25,10 +26,15 @@
       display: none
 
 .payments
-  .dashboard-section__list
-    li
-      .btns
-        .btn--green,
-        .btn--white
-          min-width: 155px
-          min-height: 41px
+  .dashboard-section__list li .btns
+    .btn--green,
+    .btn--white
+      min-width: 155px
+      min-height: 41px
+
+.tags
+  .tags__list
+    padding: 0 25px
+    gap: 25px 35px
+    label
+      grid-template: 'color title span' 'color name btns'

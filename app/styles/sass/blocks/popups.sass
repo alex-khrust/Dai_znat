@@ -110,6 +110,7 @@ main
     display: flex
     flex-flow: wrap
     gap: 25px
+    li,
     &__item
       padding: 0
       background: none
@@ -117,6 +118,9 @@ main
       display: flex
       align-items: baseline
       gap: 20px
+      &:hover
+        .tags__name
+          color: $green
   label,
   .tags__select
     width: auto
@@ -142,6 +146,7 @@ main
     font-size: 15px
     transition: .2s
     text-align: left
+    align-self: end
   &__color
     width: 32px
     height: 32px
@@ -153,7 +158,8 @@ main
       background: rgba(24, 119, 242, 1) !important
     &.yellow
       background: rgba(243, 217, 16, 1) !important
-
+  .btns
+    grid-area: btns
   .chbx
     position: absolute !important
     top: -6px
@@ -214,6 +220,8 @@ main
       font-weight: 100
 
 
+
+
 .popup__contact-add
   .popup__box
     max-width: 715px
@@ -241,3 +249,87 @@ main
   .form__col
     &:nth-child(1)
       max-height: 165px
+
+
+.popup__tags--add
+  .popup__box, 
+  .popup__tags__box
+    max-width: 780px
+    background-image: url(../images/dist/tags-bg.png)
+    background-repeat: no-repeat
+    background-position: center right 33px
+  .bg-2
+    background-image: url(../images/dist/tags-bg-2.png)
+  form
+    display: grid
+    gap: 20px
+    label
+      max-width: 290px
+    .input__title
+      font-weight: 700
+    .btn--green
+      width: auto
+      max-width: 185px
+      height: 44px
+      padding: 10px
+      margin-top: 15px
+      font-size: 14px
+
+.tags__select-color
+  width: auto
+  display: grid
+  justify-content: start
+  align-items: center
+  gap: 8px 15px
+  line-height: 1
+  position: relative
+  input
+    display: none
+  .tags__list
+    gap: 15px
+  .tags__color
+    width: 32px
+    height: 32px
+    background: $green
+    display: block
+    &.red
+      background: rgba(234, 67, 53, 1) !important
+    &.blue
+      background: rgba(24, 119, 242, 1) !important
+    &.yellow
+      background: rgba(243, 217, 16, 1) !important
+  .chbx
+    position: absolute !important
+    top: -6px
+    left: 26px
+
+  label
+    cursor: pointer
+    position: relative
+  input[type="radio"]
+    display: none
+    &+.chbx
+      width: 12px
+      height: 12px
+      object-fit: cover
+      transition: .2s
+      background: $green
+      border-radius: 2px
+      transform: scale(0)
+      &::before
+        content: ''
+        position: absolute
+        top: 2px
+        left: 4px
+        width: 3px
+        height: 6px
+        transform: rotate(45deg)
+        border-right: 1px solid #fff
+        border-bottom: 1px solid #fff
+      &::after
+        display: none
+    &:checked
+      &+.chbx
+        transform: scale(1)
+        &+.tags__color + .tags__title + .tags__name
+          color: $green
