@@ -10,6 +10,15 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+  // Preloader
+  $(window).on('load', function () {
+    $('body').addClass('loaded_hiding');
+    window.setTimeout(function () {
+      $('body').addClass('loaded');
+      $('body').removeClass('loaded_hiding');
+    }, 500);
+  });
 
 	// Custom JS
 	$('.input-images').imageUploader();
@@ -39,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //---------------------------------------------------------------------------
   // $(':radio:not(:checked)').attr('disabled', true);
   //---------------------------------------------------------------------------
-  $(".btn--popup").on("click", function () {
+  $(".btn--popup").on("click", function (e) {
+    e.preventDefault();
     var popup__name = $('.' + $(this).attr("rel"));
     $(popup__name).addClass("open");
     $("body").addClass("locked");

@@ -21,6 +21,14 @@
 
 <body>
 
+	<div class="preloader">
+		<div class="preloader__inner">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+	<!-- /.preloader -->
+
 	<header class="header-sidebar__dashboard">
 		<div class="container">
 
@@ -78,7 +86,7 @@
 							<path d="M3.97132 9.01468C4.3056 9.01468 4.57658 9.28566 4.57658 9.61993L4.57657 11.5825H6.53919C6.87346 11.5825 7.14444 11.8535 7.14444 12.1878C7.14444 12.5221 6.87346 12.793 6.53919 12.793L4.57658 12.793L4.57657 14.7557C4.57658 15.0899 4.30559 15.3609 3.97132 15.3609C3.63705 15.3609 3.36607 15.0899 3.36607 14.7557L3.36607 12.793L1.40347 12.793C1.0692 12.793 0.798218 12.5221 0.798218 12.1878C0.798218 11.8535 1.0692 11.5825 1.40347 11.5825L3.36607 11.5825L3.36607 9.61994C3.36607 9.28566 3.63705 9.01468 3.97132 9.01468Z" fill="#A4A6B3"/>
 							</svg>
 							Оплата</a></li>
-						<li class="menu__item"><a href="" class="menu__link"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<li class="menu__item"><a href="" class="menu__link btn--popup" rel="popup__exit"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M2.63973 0.333008C1.63691 0.333008 0.823975 1.14595 0.823975 2.14876V13.0433C0.823975 14.0461 1.63691 14.859 2.63973 14.859H8.99486C9.99767 14.859 10.8106 14.0461 10.8106 13.0433V12.438C10.8106 12.1037 10.5396 11.8328 10.2054 11.8328C9.87109 11.8328 9.60011 12.1037 9.60011 12.438V13.0433C9.60011 13.3775 9.32913 13.6485 8.99486 13.6485H2.63973C2.30546 13.6485 2.03448 13.3775 2.03448 13.0433V2.14876C2.03448 1.81449 2.30546 1.54351 2.63973 1.54351H8.99486C9.32913 1.54351 9.60011 1.81449 9.60011 2.14876V2.75401C9.60011 3.08828 9.87109 3.35926 10.2054 3.35926C10.5396 3.35926 10.8106 3.08828 10.8106 2.75401V2.14876C10.8106 1.14595 9.99767 0.333008 8.99486 0.333008H2.63973Z" fill="#A4A6B3"/>
 							<path d="M7.27859 5.62739C7.52843 5.40531 7.55093 5.02275 7.32886 4.77291C7.10678 4.52307 6.72422 4.50057 6.47438 4.72265L3.24184 7.59602L6.47438 10.4694C6.72422 10.6915 7.10678 10.669 7.32886 10.4191C7.55093 10.1693 7.52843 9.78673 7.27859 9.56465L5.74479 8.20127H13.5342C13.8685 8.20127 14.1395 7.93029 14.1395 7.59602C14.1395 7.26175 13.8685 6.99077 13.5342 6.99077H5.74479L7.27859 5.62739Z" fill="#A4A6B3"/>
 							</svg>
@@ -591,23 +599,29 @@
   </div>
   <!-- /.popup__tags--add -->
 
+  <div class="popup popup__exit">
+    <div class="overlay"></div>
+    <div class="popup__box">
+      <button class="btn--close">
+        <span class="line"></span>
+      </button>
+      <div class="popup__header">
+        <h3 class="title">вы действительно хотите выйти?</h3>
+      </div>
+      <p class="desc">Может все таки останитесь)</p>
+      <div class="btns">
+        <a href="" class="btn--green">Да, хочу выйти</a>
+        <a href="" class="btn--white">Все таки, остаюсь</a>
+      </div>
+    </div>
+  </div>
+  <!-- /.popup__exit -->
 
-  <!-- <script src="libs/vue.min.js"></script> -->
+
   <script src="js/app.min.js"></script>
   <script src="libs/jquery-3.2.1.min.js"></script>
   <script src="libs/uploader/image-uploader.min.js"></script>
   <script src="js/app.js"></script>
-
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-  <script src="https://unpkg.com/vue-select@latest"></script>
-  <script>
-    Vue.component('v-select', VueSelect.VueSelect)
-
-    new Vue({
-      el: '#local'
-    });
-  </script> -->
 
 
 </body>

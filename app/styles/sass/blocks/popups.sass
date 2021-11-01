@@ -333,3 +333,33 @@ main
         transform: scale(1)
         &+.tags__color + .tags__title + .tags__name
           color: $green
+
+.popup__exit
+  display: grid
+  align-items: center
+  justify-content: center
+  .popup__header
+    width: auto
+    display: flex
+    justify-content: center
+    .title
+      max-width: 300px
+      text-align: center
+      // font-size: clamp(20px, 2vw, 41px)
+  .desc
+    width: auto
+    margin: 0 0 40px
+    font-weight: 600
+    font-size: clamp(16px, 1.5vw, 22px)
+    text-align: center
+  .btns
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+    gap: 25px
+    .btn--green,
+    .btn--white
+      min-width: 195px
+      min-height: 60px
+      padding: 15px
+      font-size: clamp(16px, 1.5vw, 18px)
