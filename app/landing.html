@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="https://alex-khrust.github.io/Dai_znat/app/"> -->
+
+	<title><!--#echo var="title" --></title>
+	<meta name="description" content="Дай знать">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="preloader__inner">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+	<!-- /.preloader -->
+
+	<header class="header__landing">
+		<div class="container">
+
+			<div class="header__top">
+				<a href="" class="logo">ДАЙ ЗНАТЬ!</a>
+				
+				<button class="navBurger" role="navigation" id="navToggle">
+					<span></span>
+				</button>
+			</div>
+
+			<nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#service">о сервисе</a></li>
+          <li class="menu__item"><a href="#how">как работает</a></li>
+          <li class="menu__item"><a href="#suits">кому подходит</a></li>
+          <li class="menu__item"><a href="#reviews">отзывы</a></li>
+          <li class="menu__item"><a href="#tarifs">цены</a></li>
+        </ul>
+
+        <a href="tel:+3808006665577" class="phone link--green">0 800 666 55 77</a>
+
+				<div class="header__enter">
+					<button class="header__enter__btn"></button>
+					<a href="authorization__messenger.html" class="header__enter__link">Вхід</a>
+					/
+					<a href="authorization.html" class="header__enter__link">Реєстрація</a>
+				</div>
+				<button class="btn-call">Заказать звонок</button>
+
+				<div class='local' id="local">
+					<details class='details'>
+						<summary class="summary">RU</summary>
+						<div class='opt-wrapper'>
+							<button type="button" data-lang='russian' class='opt selected' value="RU">RU</button>
+							<button type="button" data-lang='deutsch' class='opt' value="UA">UA</button>
+						</div>
+					</details>
+				</div>
+
+			</nav>
+
+		</div>
+	</header>
+  <!-- /header -->
+
+  <main class="landing">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h1>Управляйте лояльностью клиента в 1 клик</h1>
+          <p>Сервис “экстренного реагирования” на проблему вашего гостя. Получайте фидбэк в режиме реального времени, принимайте меры и трансформируйте “недовольного” посетителя в постоянного.</p>
+          <div class="btns">
+            <a href="" class="btn--green">Подключить сервис</a>
+            <a href="" class="link--green">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./hero -->
+
+    <section class="service" id="service">
+      <div class="container">
+        <div class="service__inner">
+          <h2>О СЕРВИСЕ</h2>
+          <p>“Дай знать” — ваш виртуальный помощник, который мотивирует гостей отправлять честные отзывы в режиме реального времени лично вам. Будьте в курсе острых ситуаций, мгновенно принимайте меры и меняйте впечатление гостя раньше, чем он уйдет разочарованным или оставит негативный отзыв в социальных сетях.</p>
+          <p>Сервис обратит ваше внимание на “слепые зоны”, позволит быть на связи с гостями и видеть реальную картину дел внутри бизнеса. Опережайте события и расширяйте базу довольных клиентов с помощью сервиса “Дай знать” с экрана смартфона.</p>
+          <ul class="service-advantage__list">
+            <li class="service-advantage__item fast">
+              <span>быстро</span>
+              <p>сервис будет готов к работе уже через 48 часов после заказа</p>
+            </li>
+            <li class="service-advantage__item comfortably">
+              <span>Удобно</span>
+              <p>сообщения от клиентов приходят напрямую на ваш смартфон</p>
+            </li>
+            <li class="service-advantage__item profitable">
+              <span>выгодно</span>
+              <p>подписка стоит в десятки раз дешевле, чем штат сервисной поддержки</p>
+            </li>
+            <li class="service-advantage__item clearly">
+              <span>наглядно</span>
+              <p>гости могут отправлять фото и аудио сообщения с обратной связью</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.service -->
+
+    <section class="how" id="how">
+      <div class="container">
+        <div class="how__inner">
+          <h2 class="title">как это работает</h2>
+          <ul class="how__list">
+            <li class="how__item dissatisfied">
+              <h3>клиент не доволен!</h3>
+              <p>Вы размещаете специальный Qr-код во всех клиентских зонах с призывом: “Расскажи о своих впечатлениях собственнику бизнеса”.</p>
+            </li>
+            <li class="how__item qr">
+              <h3>навёл на QR код</h3>
+              <p>Клиент с помощью смартфона сканирует Qr-код, выбирает удобный мессенджер и попадает в чат с вами.</p>
+            </li>
+            <li class="how__item message">
+              <h3>написал сообщение</h3>
+              <p>Гость отправляет вам фото, видео и текстовые сообщения с честной обратной связью: насколько было чисто и вкусно, как быстро его обслужили и что именно ему не понравилось.</p>
+            </li>
+            <li class="how__item solution">
+              <h3>Решение проблемы</h3>
+              <p>Вы экстренно связываетесь с командой, исправляете ситуацию и радуете гостя “плюшкой” в виде скидки, подарка или бонуса при следующем посещении.</p>
+            </li>
+            <li class="how__item satisfied">
+              <h3>Клиент доволен</h3>
+              <p>Гость уходит счастливый и довольный, рекомендует вас своим друзьям и знакомым, становится постоянным клиентом компании.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="youtube">
+          <div class="youtube__inner">
+            <iframe width="785" height="566" src="https://www.youtube.com/embed/o111yYPqLHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="catch">
+          <h3>Ловим плохие отзывы</h3>
+          <p>и превращаем их в довольных клиентов еще до того, как о них узнает весь мир.</p>
+          <button class="btn--white">Я тоже так хочу!</button>
+        </div>
+
+      </div>
+    </section>
+    <!-- /.how -->
+
+    <section class="suits" id="suits">
+      <div class="container">
+        <div class="suits__inner">
+          <h2 class="title">кому подходит</h2>
+          <ul class="suits__list">
+            <li class="suits__item restaurants">
+              <h3 class="title">ресторанам</h3>
+              <p>Следите за качеством и скоростью подачи блюд, внешним видом официантов и чистотой в заведении глазами клиента. </p>
+            </li>
+            <li class="suits__item hotels">
+              <h3 class="title">отелям</h3>
+              <p>Замените перегоревшую лампочку и устраните следы некачественной уборки в номере еще до того, как клиент оставит отзыв на Tripadvisor.</p>
+            </li>
+            <li class="suits__item shops">
+              <h3 class="title">магазинам</h3>
+              <p>О свежести продуктов, вежливости персонала, чистоте прилавков и достаточном количестве товара вы узнаете лично от клиента, а не из отзывов на вашем сайте.</p>
+            </li>
+            <li class="suits__item manufacturers">
+              <h3 class="title">Крафтовым производителям</h3>
+              <p>Будьте в курсе, что думают о вашем продукте и качестве обслуживания на точках продаж из личных сообщений от клиентов.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.suits -->
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="title">отзывы</h2>
+        <div class="reviews__view">
+          <div class="green-box">
+            <span>Что о нас думают предприниматели и управляющие</span>
+          </div>
+        </div>
+        <div class="reviews__try">
+          <h3>Влияйте на впечатление гостей с экрана смартфона</h3>
+          <p>“Дай знать” — сервис для тех, кто хочет увеличить продажи с минимальными затратами.</p>
+          <a href="" class="btn--white">Попробовать сервис</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tarifs" id="tarifs">
+      <div class="container">
+        <div class="dashboard-section__header">
+          <h2 class="title">cколько стоит</h2>
+        </div>
+  
+        <div class="dashboard__inner">
+          <ul class="tarifs__list">
+            <li class="tarifs__item">
+              <div class="ribbon-wrap">
+                <div class="ribbon">
+                  <p>економия 1880 грн</p>
+                  <span>при оплате на год</span>
+                </div>
+              </div>
+
+              <div class="tarifs__header">
+                <span>Пакет</span>
+                <h2>Simple</h2>
+              </div>
+
+              <div class="tarifs__title">
+                <h3 class="title">480</h3>
+                <span class="months">грн / 1 мес</span>
+              </div>
+
+              <div class="btns">
+                <button class="btn--green">на месяц</button>
+                <button class="btn--white">на год</button>
+              </div>
+              <ul class="advantage__list">
+                <li class="advantage__item">Чат с клиентом в Telegram / Facebook messenger</li>
+                <li class="advantage__item">Текстовые и фото отзывы</li>
+                <li class="advantage__item">Настройка уведомлений</li>
+                <li class="advantage__item">Комплект наклеек с QR-кодом</li>
+                <li class="advantage__item">Аналитическая сводка</li>
+                <li class="advantage__item">Простое подключение без IT-специалиста</li>
+              </ul>
+              <div class="btns">
+                <a href="" class="btn--green">Выбрать!</a>
+                <a href="" class="link--grey">кнопка</a>
+              </div>
+            </li>
+            <li class="tarifs__item">
+              <div class="ribbon-wrap">
+                <div class="ribbon">
+                  <p>економия <span>25%</span></p>
+                </div>
+              </div>
+
+              <div class="tarifs__header">
+                <span>Пакет</span>
+                <h2>creative</h2>
+              </div>
+
+              <div class="tarifs__title">
+                <h3 class="title">3880</h3>
+                <span class="months">грн / 1 год</span>
+              </div>
+
+              <div class="btns">
+                <button class="btn--green">на месяц</button>
+                <button class="btn--white">на год</button>
+              </div>
+
+              <ul class="advantage__list">
+                <li class="advantage__item">Чат с клиентом в Telegram / Facebook messenger</li>
+                <li class="advantage__item">Текстовые и фото отзывы</li>
+                <li class="advantage__item">Настройка уведомлений</li>
+                <li class="advantage__item">Комплект наклеек с QR-кодом</li>
+                <li class="advantage__item">Аналитическая сводка</li>
+                <li class="advantage__item">Простое подключение без IT-специалиста</li>
+                <li class="advantage__item">Креативный дизайн QR-наклейки</li>
+                <li class="advantage__item">Электронные купоны / скидки для клиентов</li>
+              </ul>
+              <div class="btns">
+                <a href="" class="btn--green">Выбрать!</a>
+                <a href="" class="link--grey">кнопка</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.tarifs -->
+
+    <section class="profit">
+      <div class="container">
+        <h2 class="title">вы получите!</h2>
+        <ul class="profit__list">
+          <li class="profit__item">
+            <span class="logo">ДАЙ ЗНАТЬ!</span>
+            <p>Персональный QR-код и подключение к мессенджерам 
+              (viber, telegram)</p>
+          </li>
+          <li class="profit__item">
+            <span class="logo">ДАЙ ЗНАТЬ!</span>
+            <p>Готовность сервиса уже через 48 часов после оплаты</p>
+          </li>
+          <li class="profit__item">
+            <span class="logo">ДАЙ ЗНАТЬ!</span>
+            <p>99,9% довольных клиентов и положительных отзывов</p>
+          </li>
+        </ul>
+
+        <div class="profit__try">
+          <h3>Ликвидируйте плохие отзывы еще на стадии их зарождения</h3>
+          <a href="" class="btn--white">Активировать сервис</a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer__landing">
+		<div class="container">
+      <div class="foo__inner">
+        <div class="foo-menu">
+          <a href="" class="logo">ДАЙ ЗНАТЬ!</a>
+          <ul class="foo-menu__list">
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">г. одесса ул. приморская офис 15</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="tel:+380504444534" class="foo-menu__link">+ 380 (50) 444 45 34</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="tel:+380983322323" class="foo-menu__link">+ 380 (98) 332 23 23</a>
+            </li>
+          </ul>
+        </div>
+        <div class="foo-menu">
+          <span class="foo-menu__title">О проекте</span>
+          <ul class="foo-menu__list">
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">кто мы</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">Как работает</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">кому подходит</a>
+            </li>
+          </ul>
+        </div>
+        <div class="foo-menu">
+          <span class="foo-menu__title">клиентам</span>
+          <ul class="foo-menu__list">
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">поддержка</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">реферальная програма</a>
+            </li>
+          </ul>
+        </div>
+        <div class="foo-menu">
+          <span class="foo-menu__title">трудоустройство</span>
+          <ul class="foo-menu__list">
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">вакансии</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">стать партнером</a>
+            </li>
+          </ul>
+        </div>
+        <div class="foo-menu">
+          <span class="foo-menu__title">мы в соцсетях</span>
+          <ul class="foo-menu__list">
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">Instagram</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">facebook</a>
+            </li>
+            <li class="foo-menu__item">
+              <a href="" class="foo-menu__link">youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+			<div class="copyright">Все права защищены законом и патентом <script>var mdate = new Date(); document.write(mdate.getFullYear());</script> DAIZNAT ©</div>
+		</div>
+	</footer>
+	<!-- /footer -->
+
+	<script src="js/app.min.js"></script>
+	<script src="libs/jquery-3.2.1.min.js"></script>
+	<script src="libs/uploader/image-uploader.min.js"></script>
+	<script src="js/app.js"></script>
+	
+
+</body>
+</html>

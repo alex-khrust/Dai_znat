@@ -76,19 +76,26 @@
     background: linear-gradient(224.71deg, #69B21B 20.58%, #1D664A 163.27%)
     display: flex
     align-items: center
+    align-content: center
     justify-content: center
+    flex-flow: wrap
+    line-height: 1
+    color: #fff
     p
       margin: 0
-      font-size: 12px
-      font-weight: 700
+      font-size: 10px
+      font-weight: 600
       span
         font-size: 15px
-        font-weight: 900
+    span
+      font-size: 10px
+      font-weight: 900
 
 .tarifs
   &__list
     width: 100%
     padding: 0 33px 33px
+    margin: 0
     list-style: none
     display: flex
     align-items: center
@@ -102,9 +109,11 @@
     min-height: 468px
     padding: 35px
     text-align: center
-    display: grid
+    display: flex
+    flex-flow: column
     justify-items: center
-    align-content: space-between
+    align-items: center
+    align-content: center
     gap: 30px
     position: relative
     background: #FFFFFF
@@ -112,12 +121,6 @@
     &:nth-child(even)
       background: $darkblue
       color: #fff
-    .btn--green
-      width: 100%
-      height: 44px
-      font-size: 14px
-    .link--grey
-      margin-top: -20px 
   &__title
     display: flex
     align-items: baseline
@@ -133,31 +136,73 @@
       font-weight: bold
       font-size: 19px
       text-transform: lowercase
-      
+    &+.btns
+      width: 100%
+      justify-content: stretch
+      grid-template-columns: 1fr 1fr
   .desc
     margin: 0
     font-weight: 600
     font-size: 15px
     line-height: 18px
+  
+  &__header
+    span
+      font-weight: bold
+      font-size: 21px
+      line-height: 1
+      text-align: center
+      text-transform: lowercase
+      color: $darkblue
+    h2
+      font-size: 46px
+      line-height: 1
+      text-align: center
+      text-transform: lowercase
+      color: $green
+      padding: 0
+      &::before
+        display: none
+  &__item:nth-child(2n)
+    .tarifs__header
+      span
+        color: #fff
 
   .advantage
     &__list
       list-style: none
       padding: 0
+      margin-bottom: 65px
       display: grid
-      gap: 21px
+      align-content: space-evenly
+      gap: 5px
+      &+.btns
+        width: 100%
+        display: grid
+        justify-content: stretch
+        grid-auto-flow: row
+        align-self: flex-end
+        .btn--green
+          width: 100%
+          height: 44px
+          font-size: 14px
+        .link--grey
     &__item
+      min-height: 36px
       padding: 0 32px
       font-weight: 600
       font-size: 15px
       line-height: 18px
       position: relative
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      text-align: left
       &::before
         content: ''
         position: absolute
-        top: 50%
+        top: -2px
         left: 0
-        transform: translateY(-50%) 
         width: 21px
         height: 21px
         display: block
@@ -170,9 +215,8 @@
       &::after
         content: ''
         position: absolute
-        top: 50%
+        top: 8px
         left: 6px
-        transform: translateY(-50%)
         width: 5px
         height: 9px
         transform: rotate(45deg) translate(-50%, -50%)

@@ -41,6 +41,28 @@ document.addEventListener('DOMContentLoaded', () => {
   $(".header__enter").click(function () {
     $(this).toggleClass("open");
   });
+
+  // Прокрутка к выбранному пункту меню ------------------------------
+  $('nav ul li a').click(function(e) {
+    
+    e.preventDefault();
+    
+    var menuLink = $(this).attr('href');
+    var sectionDist = $(menuLink).offset().top;
+    var header = $("header").outerHeight(true);
+    var sectionDist = $(menuLink).offset().top;
+    
+    $('html, body').animate({scrollTop: sectionDist}, 1000);
+  });
+  //-----------------------------------------------------------------------
+  // Добавление класса active пунктам меню --------------------------------
+  $('nav ul li a').click(function(){
+    $("nav ul li a").removeClass('active');
+    $(this).addClass('active');
+    $('nav').removeClass('open');
+    $('.hamburger').toggleClass('active');
+  });
+  //-------------------------------------------------------------------------
   //---------------------------------------------------------------------------
   $(".btn--comment").click(function () {
     $('.feedback__comment').toggleClass("open");

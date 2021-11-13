@@ -35,5 +35,47 @@ footer
 			text-decoration: none
 
 	.copyright
+
+	.foo__inner
+		width: 100%
 		display: flex
-		align-content: center
+		align-items: start
+		justify-content: space-between
+		gap: 50px
+
+	.foo-menu
+		color: #fff
+		.logo
+			font-size: 37px
+			color: #fff !important
+		&__title
+			font-size: 21px
+			font-weight: 600
+			text-transform: lowercase
+		&__list
+			list-style: none
+			padding: 0
+			margin: 0
+			display: grid
+			align-items: center
+		&__item
+			font-size: 18px
+			font-weight: 500
+			text-transform: lowercase
+			a
+				color: #fff
+
+		&+.copyright
+			margin: 55px auto 0
+
+
+.footer__landing
+	.container
+		max-width: 1330px
+		display: grid
+		justify-items: center
+		justify-content: stretch
+		.foo-menu
+			&__title
+			&__list
+				

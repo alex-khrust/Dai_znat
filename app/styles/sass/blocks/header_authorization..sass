@@ -3,7 +3,9 @@ header
   top: 0
   left: 0
 
-.header__authorization
+
+.header__authorization,
+.header__landing
   border-bottom: 1px solid rgba(176, 176, 176, 1)
   transition: .3s
   background: url(../images/dist/white-paper-texture-background.jpg)
@@ -82,11 +84,51 @@ header
       grid-auto-flow: column
       gap: 25px
       margin: 0
+    &__list
+      list-style: none
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 16px
+    &__item
+      line-height: 1
+      font-weight: 600
+      font-size: 18px
+      a
+        font-size: 18px
+        font-weight: 600
+        text-transform: lowercase
+        color: #000
+        &:hover,
+        &.active
+          color: $green
+
   &.open
     .menu
       opacity: 1
       z-index: 0
       visibility: visible
+
+  .phone
+    position: relative
+    padding-left: 30px
+    white-space: nowrap
+    font-size: 18px
+    font-weight: 600
+    text-transform: uppercase
+    &::before
+      content: ''
+      width: 22px
+      height: 22px
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='white'/%3E%3Cpath d='M9.63848 12.2659C8.56944 11.0821 8.32806 9.89833 8.27361 9.42404C8.25839 9.2929 8.29914 9.16138 8.38387 9.06822L9.24898 8.11066C9.37624 7.96982 9.39882 7.75034 9.30344 7.58141L7.92602 5.21297C7.82049 5.02591 7.60381 4.9584 7.42568 5.05708L5.21443 6.2103C5.07039 6.28884 4.98566 6.45832 5.00201 6.63519C5.11788 7.85406 5.59774 10.8503 8.25681 13.7951C10.9159 16.7398 13.6213 17.271 14.7226 17.3993C14.8823 17.4174 15.0353 17.3236 15.1063 17.164L16.1477 14.7154C16.2364 14.5186 16.1759 14.2793 16.0077 14.1622L13.8688 12.6374C13.7164 12.5316 13.5182 12.5564 13.3909 12.6972L12.5262 13.6552C12.442 13.749 12.3233 13.7942 12.2048 13.7773C11.7765 13.717 10.7075 13.4497 9.63848 12.2659V12.2659Z' fill='%234EA42F'/%3E%3Cpath d='M13.8834 11.6289C13.6701 11.6289 13.4972 11.4374 13.4972 11.2012C13.4954 9.43059 12.1996 7.9957 10.6006 7.9937C10.3873 7.9937 10.2144 7.80223 10.2144 7.56603C10.2144 7.32983 10.3873 7.13836 10.6006 7.13836C12.6261 7.14083 14.2674 8.95839 14.2696 11.2012C14.2696 11.4374 14.0967 11.6289 13.8834 11.6289Z' fill='%234EA42F'/%3E%3Cpath d='M15.8145 11.6289C15.6012 11.6289 15.4283 11.4374 15.4283 11.2012C15.4253 8.25014 13.2656 5.85864 10.6006 5.85534C10.3873 5.85534 10.2144 5.66386 10.2144 5.42767C10.2144 5.19147 10.3873 5 10.6006 5C13.6921 5.00377 16.1973 7.77794 16.2007 11.2012C16.2007 11.3146 16.16 11.4234 16.0876 11.5036C16.0152 11.5838 15.9169 11.6289 15.8145 11.6289Z' fill='%234EA42F'/%3E%3C/svg%3E%0A") no-repeat 100%
+      border-radius: 50%
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.13)
+
 
   .header__enter
     width: 190px
